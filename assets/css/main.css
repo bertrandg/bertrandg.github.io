@@ -4024,7 +4024,7 @@ body {
 @media only screen and (min-width: 62.5em) {
   #post .entry-content,
   #page .entry-content {
-    max-width: 800px;
+    max-width: 1000px;
     padding: 50px 80px;
     margin: 50px auto 30px auto;
   }
@@ -4061,7 +4061,7 @@ body {
 @media only screen and (min-width: 62.5em) {
   #post #disqus_thread,
   #page #disqus_thread {
-    max-width: 800px;
+    max-width: 1000px;
     padding: 50px 80px;
     margin: 0 auto 30px auto;
   }
@@ -4120,7 +4120,7 @@ body {
 
 @media only screen and (min-width: 62.5em) {
   .read-more {
-    max-width: 800px;
+    max-width: 1000px;
     padding: 50px 80px;
     margin: 60px auto;
   }
@@ -4250,7 +4250,7 @@ body {
 
 @media only screen and (min-width: 62.5em) {
   #post-index #main {
-    max-width: 800px;
+    max-width: 1000px;
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
@@ -4374,4 +4374,8 @@ body {
 #goog-wm-sb:hover {
   color: #222222;
   background-color: #ffffff;
+}
+
+.gist {
+  width: 100%;
 }

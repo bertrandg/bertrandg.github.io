@@ -1,5 +1,5 @@
-title:            Site Title
-description:      Describe your website here.
+title:            Web dev
+description:      Codes samples, tips, experiments,..
 disqus_shortname: bertrandggithubio
 #Your site's domain goes here. Leave localhost server or blank when working locally.
 #url:              http://0.0.0.0:4000/
@@ -9,19 +9,14 @@ url:
 owner:
   name:           Bertrand Gaillard
   avatar:         avatar.jpg
-  bio:            "Frontend developer<br>Lyon, FRANCE<br>(+33) 06 63 28 71 79"
+  bio:            "Web Developer<br>Lyon, FRANCE<br>(+33) 06 63 28 71 79"
   email:          bertrandgaillard@hotmail.fr
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
-  facebook:       
-  github:         bertrandg
+  github:         http://github.com/bertrandg
   stackexchange:  
   linkedin:       http://www.linkedin.com/pub/bertrand-gaillard/21/3bb/a63
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:   
+  flickr:         https://www.flickr.com/photos/37553716@N05/
 
 # Background image to be tiled on all pages
 background: 
@@ -35,14 +30,14 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Theme Setup
-    url: /theme-setup
-  - title: External Link
-    url: http://mademistakes.com
+  - title: My Gists
+    url: /gists
+  - title: yourphototravel.com
+    url: http://www.yourphototravel.com
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Europe/Paris
 future:      true
 highlighter: pygments
 markdown:    kramdown
@@ -51,7 +46,7 @@ markdown:    kramdown
 permalink:   /:categories/:title/
 
 # Amount of post to show on home page
-paginate: 5
+paginate: 3
 
 kramdown:
   auto_ids: true
