@@ -12,5 +12,6 @@ share: true
 
 ### Angular: count how many watch now (paste in console)
 
+<div class="mygists">
 <script src="https://gist.github.com/bertrandg/fd0a11dedb1a977a50da.js"></script>
-
+</div>
