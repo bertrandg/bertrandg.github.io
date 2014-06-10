@@ -12,10 +12,12 @@ comments: true
 share: true
 ---
 
+
 Here is a quick way to know **how many** **watchers** are running and which **expressions** are parsed in a **specific part** and at **any moment** of your angular app lifecycle.
 
 You can test it **before** and **after** an action to view the **difference**.
 
+Warning: Currently
 
 ## <i class="icon icon-asterisk"></i> How it works ##
 
@@ -75,7 +77,5 @@ Idem, but this case I used the html panel of Firebug to select the element I wan
     <a href="/images/debug_watchers/screen_firebug_2.jpg"><img src="/images/debug_watchers/screen_firebug_2.jpg" alt=""></a>
 </figure>
 
-## <i class="icon icon-asterisk"></i> To do: ##
 
-* This code haven't been tested in all situations, tell me if you have problems!
-* Remove jQuery dependency..
+This code haven't been tested in all situations, tell me if you have problems!
