@@ -63,7 +63,7 @@ Count watchers and output expressions inside the first instance of `myCustomDire
 debugWatchers('html body.ng-scope div#global div div.subContent div.ng-scope div#panel.ng-scope div.table-container table.ng-scope tbody tr.ng-scope:nth-child(2)', true)
 {% endhighlight %}
 
-Idem, but this case I used the html panel of Firebug to select the element I want and `Right-click` > `Copy CSS path`. Sometimes a `nth-child()` is needed to complete the `selector`.
+Idem, but this case I used the HTML panel of Firebug (Elements panel inside Chrome) to select the element I want and `Right-click` > `Copy CSS path`. Sometimes a `nth-child()` is needed to complete the `selector`.
 
 ## <i class="icon icon-asterisk"></i> Results: ##
 
