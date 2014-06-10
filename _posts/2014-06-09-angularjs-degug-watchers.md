@@ -17,8 +17,6 @@ Here is a quick way to know **how many** **watchers** are running and which **ex
 
 You can test it **before** and **after** an action to view the **difference**.
 
-Warning: Currently
-
 ## <i class="icon icon-asterisk"></i> How it works ##
 
 ### Paste this code inside your console with your angular app running ###
