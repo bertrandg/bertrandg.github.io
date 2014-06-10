@@ -44,10 +44,8 @@ debugWatchers(selector, showExp)
 debugWatchers($0, true)
 {% endhighlight %}
 
-Return watchers number and expressions inside the current selected DOM element in the HTML Firebug panel (Elements panel inside Chrome).<br>
-In fact, this is the best way to use it. I always use it like that.<br>
-I switch between Console panel and HTML/Elements panel to know which parts of the app are gourmand.<br>
-It's an interesting way to 'look under the hood' of famous angular app too! :) 
+Return watchers number and expressions inside the current selected DOM element in the HTML Firebug panel (Elements panel inside Chrome). In fact, I always use it like that.<br>
+Switching between Console panel and HTML/Elements panel is the best way to know which parts of your app are gourmandand it's an interesting way to 'look under the hood' of famous angular app too! :) 
 
 {% highlight js %}
 debugWatchers('[ng-controller="MenuCtrl"]')
