@@ -2,16 +2,31 @@
 
 /* Better styles for embedding GitHub Gists */
 .gist{
-    font-size:13px;
-    line-height:18px;
+    font-size:11px !important;
     margin-bottom:20px;
     width:100%;
     
     .highlight {
         width: 100%;
     }
+    
+    .lines {
+        margin-bottom: 0 !important;
+    }
+    
+    .line-number,
+    .line {
+        line-height: 15px !important;
+    }
 }
-.gist pre{line-height: 20px !important}
-.gist-meta{font-family:Helvetica,Arial,sans-serif;font-size:13px !important}
-.gist-meta a{color:#26a !important;text-decoration:none}
-.gist-meta a:hover{color:#0e4071 !important}
+.gist-meta{
+    font-family:Helvetica,Arial,sans-serif;
+    font-size:11px !important;
+}
+.gist-meta a{
+    color:#26a !important;
+    text-decoration:none;
+}
+.gist-meta a:hover{
+    color:#0e4071 !important;
+}

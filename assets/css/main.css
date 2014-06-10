@@ -411,7 +411,7 @@ pre::-webkit-scrollbar-thumb:horizontal {
           border-radius: 4px;
 }
 
-.highlight {
+div:not(.mygists) .highlight {
   margin-bottom: 1.5em;
   font-size: 12px;
   font-size: 0.75rem;
@@ -424,251 +424,251 @@ pre::-webkit-scrollbar-thumb:horizontal {
           border-radius: 3px;
 }
 
-.highlight pre {
+div:not(.mygists) .highlight pre {
   position: relative;
   padding: 1em;
   margin: 0;
 }
 
-.highlight .lineno {
+div:not(.mygists) .highlight .lineno {
   padding-right: 24px;
   color: #8f908a;
 }
 
-.highlight .hll {
+div:not(.mygists) .highlight .hll {
   background-color: #49483e;
 }
 
-.highlight .c {
+div:not(.mygists) .highlight .c {
   color: #75715e;
 }
 
-.highlight .err {
+div:not(.mygists) .highlight .err {
   color: #960050;
   background-color: #1e0010;
 }
 
-.highlight .k {
+div:not(.mygists) .highlight .k {
   color: #66d9ef;
 }
 
-.highlight .l {
+div:not(.mygists) .highlight .l {
   color: #ae81ff;
 }
 
-.highlight .n {
+div:not(.mygists) .highlight .n {
   color: #f8f8f2;
 }
 
-.highlight .o {
+div:not(.mygists) .highlight .o {
   color: #f92672;
 }
 
-.highlight .p {
+div:not(.mygists) .highlight .p {
   color: #f8f8f2;
 }
 
-.highlight .cm {
+div:not(.mygists) .highlight .cm {
   color: #75715e;
 }
 
-.highlight .cp {
+div:not(.mygists) .highlight .cp {
   color: #75715e;
 }
 
-.highlight .c1 {
+div:not(.mygists) .highlight .c1 {
   color: #75715e;
 }
 
-.highlight .cs {
+div:not(.mygists) .highlight .cs {
   color: #75715e;
 }
 
-.highlight .ge {
+div:not(.mygists) .highlight .ge {
   font-style: italic;
 }
 
-.highlight .gs {
+div:not(.mygists) .highlight .gs {
   font-weight: bold;
 }
 
-.highlight .kc {
+div:not(.mygists) .highlight .kc {
   color: #66d9ef;
 }
 
-.highlight .kd {
+div:not(.mygists) .highlight .kd {
   color: #66d9ef;
 }
 
-.highlight .kn {
+div:not(.mygists) .highlight .kn {
   color: #f92672;
 }
 
-.highlight .kp {
+div:not(.mygists) .highlight .kp {
   color: #66d9ef;
 }
 
-.highlight .kr {
+div:not(.mygists) .highlight .kr {
   color: #66d9ef;
 }
 
-.highlight .kt {
+div:not(.mygists) .highlight .kt {
   color: #66d9ef;
 }
 
-.highlight .ld {
+div:not(.mygists) .highlight .ld {
   color: #e6db74;
 }
 
-.highlight .m {
+div:not(.mygists) .highlight .m {
   color: #ae81ff;
 }
 
-.highlight .s {
+div:not(.mygists) .highlight .s {
   color: #e6db74;
 }
 
-.highlight .na {
+div:not(.mygists) .highlight .na {
   color: #a6e22e;
 }
 
-.highlight .nb {
+div:not(.mygists) .highlight .nb {
   color: #f8f8f2;
 }
 
-.highlight .nc {
+div:not(.mygists) .highlight .nc {
   color: #a6e22e;
 }
 
-.highlight .no {
+div:not(.mygists) .highlight .no {
   color: #66d9ef;
 }
 
-.highlight .nd {
+div:not(.mygists) .highlight .nd {
   color: #a6e22e;
 }
 
-.highlight .ni {
+div:not(.mygists) .highlight .ni {
   color: #f8f8f2;
 }
 
-.highlight .ne {
+div:not(.mygists) .highlight .ne {
   color: #a6e22e;
 }
 
-.highlight .nf {
+div:not(.mygists) .highlight .nf {
   color: #a6e22e;
 }
 
-.highlight .nl {
+div:not(.mygists) .highlight .nl {
   color: #f8f8f2;
 }
 
-.highlight .nn {
+div:not(.mygists) .highlight .nn {
   color: #f8f8f2;
 }
 
-.highlight .nx {
+div:not(.mygists) .highlight .nx {
   color: #a6e22e;
 }
 
-.highlight .py {
+div:not(.mygists) .highlight .py {
   color: #f8f8f2;
 }
 
-.highlight .nt {
+div:not(.mygists) .highlight .nt {
   color: #f92672;
 }
 
-.highlight .nv {
+div:not(.mygists) .highlight .nv {
   color: #f8f8f2;
 }
 
-.highlight .ow {
+div:not(.mygists) .highlight .ow {
   color: #f92672;
 }
 
-.highlight .w {
+div:not(.mygists) .highlight .w {
   color: #f8f8f2;
 }
 
-.highlight .mf {
+div:not(.mygists) .highlight .mf {
   color: #ae81ff;
 }
 
-.highlight .mh {
+div:not(.mygists) .highlight .mh {
   color: #ae81ff;
 }
 
-.highlight .mi {
+div:not(.mygists) .highlight .mi {
   color: #ae81ff;
 }
 
-.highlight .mo {
+div:not(.mygists) .highlight .mo {
   color: #ae81ff;
 }
 
-.highlight .sb {
+div:not(.mygists) .highlight .sb {
   color: #e6db74;
 }
 
-.highlight .sc {
+div:not(.mygists) .highlight .sc {
   color: #e6db74;
 }
 
-.highlight .sd {
+div:not(.mygists) .highlight .sd {
   color: #e6db74;
 }
 
-.highlight .s2 {
+div:not(.mygists) .highlight .s2 {
   color: #e6db74;
 }
 
-.highlight .se {
+div:not(.mygists) .highlight .se {
   color: #ae81ff;
 }
 
-.highlight .sh {
+div:not(.mygists) .highlight .sh {
   color: #e6db74;
 }
 
-.highlight .si {
+div:not(.mygists) .highlight .si {
   color: #e6db74;
 }
 
-.highlight .sx {
+div:not(.mygists) .highlight .sx {
   color: #e6db74;
 }
 
-.highlight .sr {
+div:not(.mygists) .highlight .sr {
   color: #e6db74;
 }
 
-.highlight .s1 {
+div:not(.mygists) .highlight .s1 {
   color: #e6db74;
 }
 
-.highlight .ss {
+div:not(.mygists) .highlight .ss {
   color: #e6db74;
 }
 
-.highlight .bp {
+div:not(.mygists) .highlight .bp {
   color: #f8f8f2;
 }
 
-.highlight .vc {
+div:not(.mygists) .highlight .vc {
   color: #f8f8f2;
 }
 
-.highlight .vg {
+div:not(.mygists) .highlight .vg {
   color: #f8f8f2;
 }
 
-.highlight .vi {
+div:not(.mygists) .highlight .vi {
   color: #f8f8f2;
 }
 
-.highlight .il {
+div:not(.mygists) .highlight .il {
   color: #ae81ff;
 }
 
@@ -4376,6 +4376,37 @@ body {
   background-color: #ffffff;
 }
 
+/* Better styles for embedding GitHub Gists */
+
 .gist {
   width: 100%;
+  margin-bottom: 20px;
+  font-size: 11px !important;
+}
+
+.gist .highlight {
+  width: 100%;
+}
+
+.gist .lines {
+  margin-bottom: 0 !important;
+}
+
+.gist .line-number,
+.gist .line {
+  line-height: 15px !important;
+}
+
+.gist-meta {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px !important;
+}
+
+.gist-meta a {
+  color: #26a !important;
+  text-decoration: none;
+}
+
+.gist-meta a:hover {
+  color: #0e4071 !important;
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular degugging: Track your watchers
+title: "AngularJS debug: Track your watchers and expressions"
 description: ""
 modified: 2014-06-09
 tags: [angularjs, debug]
@@ -12,41 +12,61 @@ comments: true
 share: true
 ---
 
-[DRAFT]
+Here is a quick way to know **how many** **watchers** are running and which **expressions** are parsed in a **specific part** and at **any moment** of your angular app lifecycle.
 
-Here is a quick way to know at any moment of your angular app lifecycle how many watchers are running and which expressions are parsed, you can test it before and after an action to view the difference.
+You can test it **before** and **after** an action to view the **difference**.
 
 
-## How it works ##
+## <i class="icon icon-asterisk"></i> How it works ##
 
-- Paste this code inside your console with your angular app running:
+### Paste this code inside your console with your angular app running ###
 <script src="https://gist.github.com/bertrandg/6516282749ea7116f610.js"></script>
 
-- Call `debugWatchers(selector, showExp)` inside the console
-The first parameter is a `css selector` to target a DOM element on which you want to know how many watchers inside him.
-The second parameter is a `boolean` to tell if you want to output `expressions` found.
+### Call it from the console ###
 
-> Warning, your selector have to return only one element!
+{% highlight js %}
+debugWatchers(selector, showExp)
+{% endhighlight %}
 
-> Maybe you have too much watchers to be listed in the console, you can extend le log limit of Firebug with Firefox:
-> New tab > `about:config` > change this var: `extensions.firebug.console.logLimit = 1200`
+`selector` could be a DOM element, a jQuery object or a css selector (String).
+
+`showExp` is a boolean to tell if you want to output expressions foud or not.
+
+> Warning, if your selector is a jQuery object, it should contain only one element. It is true for your css selector too!
+
+> Warning, if you have too much watchers to be listed in the console, you can extend the log limit of Firebug (with Firefox):<br>
+> Type url `about:config` and change this var: `extensions.firebug.console.logLimit = 1200`
 
 
-## Example: ##
+## <i class="icon icon-asterisk"></i> Examples: ##
 
-- `debugWatchers('[ng-controller="MenuCtrl"]')`
+{% highlight js %}
+debugWatchers($0, true)
+{% endhighlight %}
+
+Return watchers number and expressions inside the current selected DOM element in the HTML Firebug panel.<br>
+In fact, this is the best way to use it. I always use it like that, switching between Console panel and HTML panel to know which parts of the app are gourmand.
+
+{% highlight js %}
+debugWatchers('[ng-controller="MenuCtrl"]')
+{% endhighlight %}
 
 Return watchers number inside MenuCtrl, be careful, it will works only if the controller was include with an `ng-controller`, not if a directive included it.
 
-- `debugWatchers('my-custom-directive:nth-child(0)', true)`
+{% highlight js %}
+debugWatchers('my-custom-directive:nth-child(0)', true)
+{% endhighlight %}
 
 Return watchers number and all expressions inside the first instance of `myCustomDirective`, it will works only if there is not a `replace: true` inside it.
 
-- `debugWatchers('html body.ng-scope div#global div div.subContent div.ng-scope div#panel.ng-scope div.table-container table.ng-scope tbody tr.ng-scope:nth-child(2)', true)`
+{% highlight js %}
+debugWatchers('html body.ng-scope div#global div div.subContent div.ng-scope div#panel.ng-scope div.table-container table.ng-scope tbody tr.ng-scope:nth-child(2)', true)
+{% endhighlight %}
 
 
 Idem, but this case I used the html panel of Firebug to select the element I want and `Right-click` > `Copy CSS path`. Sometimes a `nth-child()` is needed to complete the `selector`.
 
 ## To do: ##
 
+* This is a 
 * Remove jQuery dependency..
