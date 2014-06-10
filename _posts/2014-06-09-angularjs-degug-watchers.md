@@ -44,20 +44,20 @@ debugWatchers(selector, showExp)
 debugWatchers($0, true)
 {% endhighlight %}
 
-Return watchers number and expressions inside the current selected DOM element in the HTML Firebug panel (Elements panel inside Chrome). In fact, I always use it like that.<br>
+Count watchers and output expressions inside the current selected DOM element in the HTML Firebug panel (Elements panel inside Chrome). In fact, I always use it like that.<br>
 Switching between Console panel and HTML/Elements panel is the best way to know which parts of your app are gourmandand it's an interesting way to 'look under the hood' of famous angular app too! :) 
 
 {% highlight js %}
 debugWatchers('[ng-controller="MenuCtrl"]')
 {% endhighlight %}
 
-Return watchers number inside MenuCtrl, be careful, it will works only if the controller was include with an `ng-controller`, not if a directive included it.
+Count watchers inside MenuCtrl, be careful, it will works only if the controller was include with an `ng-controller`, not if a directive included it.
 
 {% highlight js %}
 debugWatchers('my-custom-directive:nth-child(0)', true)
 {% endhighlight %}
 
-Return watchers number and all expressions inside the first instance of `myCustomDirective`, it will works only if there is not a `replace: true` inside it.
+Count watchers and output expressions inside the first instance of `myCustomDirective`, it will works only if there is not a `replace: true` inside it.
 
 {% highlight js %}
 debugWatchers('html body.ng-scope div#global div div.subContent div.ng-scope div#panel.ng-scope div.table-container table.ng-scope tbody tr.ng-scope:nth-child(2)', true)
