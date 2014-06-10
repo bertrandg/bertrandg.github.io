@@ -45,7 +45,7 @@ debugWatchers($0, true)
 {% endhighlight %}
 
 Count watchers and output expressions inside the current selected DOM element in the HTML Firebug panel (Elements panel inside Chrome). In fact, I always use it like that.<br>
-Switching between Console panel and HTML/Elements panel is the best way to know which parts of your app are gourmandand it's an interesting way to 'look under the hood' of famous angular app too! :) 
+Switching between Console panel and HTML/Elements panel is the best way to know which parts of your app are gourmand and it's an interesting way to 'look under the hood' of famous angular app too! :) 
 
 {% highlight js %}
 debugWatchers('[ng-controller="MenuCtrl"]')
