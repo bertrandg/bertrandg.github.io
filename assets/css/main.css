@@ -672,151 +672,6 @@ div:not(.mygists) .highlight .il {
   color: #ae81ff;
 }
 
-.CodeRay {
-  margin-bottom: 1.5em;
-  font-family: monospace;
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 2.1667;
-  color: #d0d0d0;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
-}
-
-.CodeRay .code pre {
-  padding: 1em;
-  margin: 0;
-  background-color: #272822;
-  border: 1px solid #dbdbdb;
-}
-
-span.CodeRay {
-  padding: 2px;
-  white-space: pre;
-  border: 0;
-}
-
-table.CodeRay {
-  width: 100%;
-  padding: 2px;
-  border-collapse: collapse;
-}
-
-table.CodeRay td {
-  padding: 1em 0.5em;
-  vertical-align: top;
-}
-
-.CodeRay .line-numbers,
-.CodeRay .no {
-  color: #8f908a;
-  text-align: right;
-}
-
-.CodeRay .line-numbers a {
-  color: #8f908a;
-}
-
-.CodeRay .line-numbers tt {
-  font-weight: bold;
-}
-
-.CodeRay .line-numbers .highlighted {
-  color: #ff0000;
-}
-
-.CodeRay .line {
-  display: block;
-  float: left;
-  width: 100%;
-}
-
-.CodeRay span.line-numbers {
-  padding: 0 24px 0 4px;
-}
-
-.CodeRay .code {
-  width: 100%;
-}
-
-ol.CodeRay {
-  font-size: 10pt;
-}
-
-ol.CodeRay li {
-  white-space: pre;
-}
-
-.CodeRay .code pre {
-  overflow: auto;
-}
-
-.CodeRay .debug {
-  color: white ! important;
-  background: blue ! important;
-}
-
-.CodeRay .doctype,
-.CodeRay .key,
-.CodeRay .instance-variable {
-  color: #f8f8f2;
-}
-
-.CodeRay .attribute-name {
-  color: #a6e22e;
-}
-
-.CodeRay .symbol,
-.CodeRay .integer,
-.CodeRay .float {
-  color: #ff658b;
-}
-
-.CodeRay .string {
-  color: #2dc900;
-}
-
-.CodeRay .keyword {
-  color: #66d9ef;
-}
-
-.CodeRay .function,
-.CodeRay .class {
-  color: #a6e22e;
-}
-
-.CodeRay .regexp,
-.CodeRay .constant,
-.CodeRay .tag {
-  color: #f92672;
-}
-
-.CodeRay .modifier,
-.CodeRay .predefined-constant {
-  color: #ff84e4;
-}
-
-.CodeRay .comment {
-  color: #75715e;
-}
-
-.CodeRay .error {
-  color: #ecc;
-}
-
-.CodeRay .content {
-  color: #e6db74;
-}
-
-.CodeRay .delimiter {
-  color: #e6db74;
-}
-
-.CodeRay .inline {
-  color: #e6db74;
-}
-
 .clearfix {
   *zoom: 1;
 }
@@ -904,7 +759,7 @@ figure a img:hover {
 @media only screen and (min-width: 62.5em) {
   figure.half img {
     float: left;
-    width: 310px;
+    width: 410px;
     margin-right: 10px;
   }
   figure.half figcaption {
@@ -915,7 +770,7 @@ figure a img:hover {
 @media only screen and (min-width: 62.5em) {
   figure.third img {
     float: left;
-    width: 200px;
+    width: 266px;
     margin-right: 10px;
   }
   figure.third figcaption {

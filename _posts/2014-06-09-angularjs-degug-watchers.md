@@ -63,10 +63,19 @@ Return watchers number and all expressions inside the first instance of `myCusto
 debugWatchers('html body.ng-scope div#global div div.subContent div.ng-scope div#panel.ng-scope div.table-container table.ng-scope tbody tr.ng-scope:nth-child(2)', true)
 {% endhighlight %}
 
-
 Idem, but this case I used the html panel of Firebug to select the element I want and `Right-click` > `Copy CSS path`. Sometimes a `nth-child()` is needed to complete the `selector`.
 
-## To do: ##
+## <i class="icon icon-asterisk"></i> Results: ##
 
-* This is a 
+1. Select your target in HTML panel.
+2. Execute `debugWatchers($0, true)` in Console panel.
+
+<figure class="half">
+    <a href="/images/debug_watchers/screen_firebug_1.png"><img src="/images/debug_watchers/screen_firebug_1.png" alt=""></a>
+    <a href="/images/debug_watchers/screen_firebug_2.jpg"><img src="/images/debug_watchers/screen_firebug_2.jpg" alt=""></a>
+</figure>
+
+## <i class="icon icon-asterisk"></i> To do: ##
+
+* This code haven't been tested in all situations, tell me if you have problems!
 * Remove jQuery dependency..
