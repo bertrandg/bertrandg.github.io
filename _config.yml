@@ -9,7 +9,7 @@ url:              http://bertrandg.github.io/
 owner:
   name:           Bertrand Gaillard
   avatar:         avatar.jpg
-  bio:            "Web Developer<br>Lyon, FRANCE<br>(+33) 06 63 28 71 79"
+  bio:            "Web Developer<br>Lyon, FRANCE"
   email:          bertrandgaillard@hotmail.fr
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
@@ -30,8 +30,6 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Gists
-    url: /gists
   - title: yourphototravel.com
     url: http://www.yourphototravel.com
     external: true
