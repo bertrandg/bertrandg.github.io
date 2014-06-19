@@ -13,6 +13,8 @@ share: true
 ---
 
 
+## \[Edit\] Don't return 100% watchers in several cases.. :( <br>Use [Chrome Batarang extension](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk) to do that better.
+
 Here is a quick way to know **how many** **watchers** are running and which **expressions** are parsed in a **specific part** and at **any moment** of your angular app lifecycle.
 
 You can test it **before** and **after** an action to view the **difference**.
@@ -65,6 +67,7 @@ debugWatchers('html body.ng-scope div#global div div.subContent div.ng-scope div
 
 Idem, but this case I used the HTML panel of Firebug (Elements panel inside Chrome) to select the element I want and `Right-click` > `Copy CSS path`. Sometimes a `nth-child()` is needed to complete the `selector`.
 
+<!---
 ## <i class="icon icon-asterisk"></i> Results: ##
 
 1. Select your target in HTML panel.
@@ -74,6 +77,6 @@ Idem, but this case I used the HTML panel of Firebug (Elements panel inside Chro
     <a href="/images/debug_watchers/screen_firebug_1.png"><img src="/images/debug_watchers/screen_firebug_1.png" alt=""></a>
     <a href="/images/debug_watchers/screen_firebug_2.jpg"><img src="/images/debug_watchers/screen_firebug_2.jpg" alt=""></a>
 </figure>
-
+-->
 
 This code haven't been tested in all situations, tell me if you have problems!

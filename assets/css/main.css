@@ -3629,11 +3629,21 @@ body {
   line-height: 1.625;
 }
 
+.entry-content h1 > a,
+.entry-content h2 > a,
+.entry-content h3 > a,
+.entry-content h4 > a,
+.entry-content h5 > a,
 .entry-content p > a,
 .entry-content li > a {
   border-bottom: 1px dotted #a2a2a2;
 }
 
+.entry-content h1 > a:hover,
+.entry-content h2 > a:hover,
+.entry-content h3 > a:hover,
+.entry-content h4 > a:hover,
+.entry-content h5 > a:hover,
 .entry-content p > a:hover,
 .entry-content li > a:hover {
   border-bottom-style: solid;

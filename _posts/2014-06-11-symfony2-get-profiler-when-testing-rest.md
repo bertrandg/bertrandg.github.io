@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syntax Highlighting Post
-description: "Demo post displaying the various ways of highlighting code in Markdown."
+title: Get Symfony2 Profiler when testing Get REST api
+description: ""
 modified: 2013-08-20
 tags: [sample post, code, highlighting]
 image:
@@ -12,18 +12,20 @@ comments: true
 share: true  
 ---
 
-[Syntax highlighting](http://en.wikipedia.org/wiki/Syntax_highlighting) is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.
+Sometimes you want to know in live, how many Doctrine queries, memory usage, or others things while testing your Get REST api, here is a simple way to have your profiler.
+
+The condition to have the profiler added is to output HTML, so we output HTML.
 
 ### Code
 
 
 {% highlight ruby %}
 parameters:
-    routes_to_convert_html: ["api_datapoint_get_datapointsX", "spa_path_js"]
+    routes_to_convert_html: ["api_datasource_get_source", "api_datasource_get_customer", "api_datasource_get_history"]
 	
 services:
-    acme.listener.kernel.convert_html:
-        class: ADTM\DatasourceBundle\Listener\ConvertToHtmlResponseListener
+    dtm.datasource.listener.kernel.convert_html:
+        class: CTM\DatasourceBundle\Listener\ConvertToHtmlResponseListener
         arguments: ['%routes_to_convert_html%']
         tags:
             - { name: kernel.event_listener, event: kernel.response }
@@ -31,7 +33,7 @@ services:
 
 {% highlight php %}
 <?php
-namespace ADTM\DatasourceBundle\Listener;
+namespace CTM\DatasourceBundle\Listener;
 
 use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
 
@@ -58,10 +60,6 @@ class ConvertToHtmlResponseListener {
 		if (!$request->headers->has('Accept') || (false === strpos($request->headers->get('Accept'), 'text/html'))) {
 			return;
 		}
-
-		// $request->getMethod()
-		// $request->getRequestUri()
-		// var_dump($request->attributes->get('_route'));die;
 
 		$response = $event->getResponse();
 		switch ($request->getRequestFormat()) {
@@ -95,9 +93,7 @@ class ConvertToHtmlResponseListener {
 }
 {% endhighlight %}
 
+Solution found here: [Paul Ferrett - Stack Overflow](http://stackoverflow.com/questions/21555697/how-to-display-the-symfony-profiler-for-api-request-made-in-the-browser)
 
-Or you can simply use the sf profiler history by clicking on "View last 10" button.
-
-And to test your POST/PUT/DELETE requests, [Postman](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm) is a must-have tool.
-
+To check your `POST` `PUT` `DELETE` requests, use [Chrome Postman extension](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm) (a must-have tool), and then use the symfony2 Profiler history by clicking on "View last 10" button.
 
