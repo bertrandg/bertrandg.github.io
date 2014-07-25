@@ -4276,3 +4276,12 @@ body {
 .gist-meta a:hover {
   color: #0e4071 !important;
 }
+
+.entry-content table {
+  width: 100%;
+}
+
+.entry-content table td {
+  padding: 10px 0;
+  border-bottom: 1px solid #bbbbbb;
+}

@@ -3,7 +3,7 @@ layout: post
 title: Get Symfony2 Profiler when testing Get REST api
 description: ""
 modified: 2013-08-20
-tags: [sample post, code, highlighting]
+tags: [symfony2, rest, debug]
 image:
   feature: abstract-10.jpg
   credit: dargadgetz

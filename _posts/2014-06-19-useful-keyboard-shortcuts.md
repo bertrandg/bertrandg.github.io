@@ -3,7 +3,7 @@ layout: post
 title: Useful keyboard shortcuts for web developer
 description: ""
 modified: 2013-08-20
-tags: [sample post, code, highlighting]
+tags: [shortcuts, eclipse, firefox, chrome]
 image:
   feature: abstract-10.jpg
   credit: dargadgetz
@@ -46,3 +46,5 @@ Shortcuts are really useful and make you gain productivity, here are those I use
 | Modify zoom | `Ctrl` + (`+` \|\| `-` \|\| `0` (reset)) |
 | Reload, reload without cache | `F5` / `Ctrl` + `F5` |
 | Open developer tools | `F12` |
+
+
