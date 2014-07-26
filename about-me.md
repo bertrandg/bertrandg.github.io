@@ -2,7 +2,7 @@
 layout: page
 permalink: /about-me/
 title: About Me
-tags: [bertrand gaillard, CV, about]
+tags: [bertrand gaillard, CV, about, web developer]
 image:
   feature: bg/405121.jpg
   credit: miroha
@@ -17,23 +17,30 @@ share: true
 
 # Bertrand Gaillard<br>11/02/1986<br>Lyon, FRANCE
 
-Web development is more than job, it' a passion. I love to code and learn things everyday. I adjust quickly and changed several times of programmation language, technology and even country!
-I speak english properly and read/write it well. I lived 2 years in Montréal.
+Web development is more than job, it' a passion. I love to code and learn things everyday. I adjust quickly and changed several times of programmation language, technologies and even country!
+My birth language is french and I speak English well thanks to my two years in Montreal.
 
 ## Skills
 
 On server side, I use Symfony2 to developp website or REST api with MySQL database.
+
 On client side, I used to code with BackboneJS which is nice but no way to go back with it since I discovered AngularJS, this is the best framework for coding great SPA in a minimum lines of code.
+
 I am sensitive to UI/UX issues and responsive design, Bootstrap or Foundation are great ways to have quickly a clean result but vanilla CSS with SASS/Compass is a good solution too.
+
 In an other life, I was an actionscript developper but.. Steve was right! :)
 
 ## Keywords
 
-PHP5, Symfony2, Doctrine, Twig
-HTML5, CSS3, SASS, Compass, Bootstrap, Foundation
-Javascript, AngularJS, BackboneJS, jQuery
-Actionscript, Flash, Flex, Air, PureMvc, RobotLegs 
-Git, GitHub, Bower, Grunt, Jekyll
+`Javascript`, `AngularJS`, `BackboneJS`, `jQuery`
+
+`PHP5`, `Symfony2`, `Doctrine`, `Twig`
+
+`HTML5`, `CSS3`, `SASS`, `Compass`, `Bootstrap`, `Foundation`
+
+`Actionscript`, `Flash`, `Flex`, `Air`, `PureMvc`, `RobotLegs`
+
+`Git`, `GitHub`, `Bower`, `Grunt`, `Jekyll`
 
 ## Employment
 
