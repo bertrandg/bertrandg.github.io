@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AngularJS: Disable a button during an http request
+title: "AngularJS: Disable a button during an http request"
 description: ""
 modified: 2014-08-21
 tags: [disabled, directive, angularjs, plunker]
