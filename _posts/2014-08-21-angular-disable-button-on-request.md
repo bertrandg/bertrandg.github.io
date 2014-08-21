@@ -37,7 +37,7 @@ app.directive('disableOnRequest', function ($parse) {
 });
 {% endhighlight %}
 
-The second solution is better because you don't pollute your controller with boolean only used for the view and it's 
+The second solution is better because you don't pollute your controller with a boolean only used for the view and it's one watcher less for each time you use it.
 
 View it in action:
 
