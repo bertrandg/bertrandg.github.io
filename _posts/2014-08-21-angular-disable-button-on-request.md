@@ -39,6 +39,8 @@ app.directive('disableOnRequest', function ($parse) {
 
 The second solution is better because you don't pollute your controller with a boolean only used for the view and it's one watcher less for each time you use it.
 
+However, to use it, a promise have to be returned in your save function. `Restangular` does by default or you can create one with `$q`.
+
 View it in action:
 
 <iframe style="border: 1px solid #bbb;width: 100%; height: 400px" src="http://embed.plnkr.co/V3UVgTzdtub9VpG5PUNJ/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>
