@@ -43,4 +43,4 @@ However, to use it, a promise have to be returned in your save function. `Restan
 
 View it in action:
 
-<iframe style="border: 1px solid #bbb;width: 100%; height: 400px" src="http://embed.plnkr.co/V3UVgTzdtub9VpG5PUNJ/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>
+<iframe style="border: 1px solid #bbb;width: 100%; height: 400px" src="http://embed.plnkr.co/pK6GZd/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>
