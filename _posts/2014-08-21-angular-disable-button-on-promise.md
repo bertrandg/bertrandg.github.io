@@ -6,8 +6,6 @@ modified: 2014-08-21
 tags: [disabled, directive, angularjs, plunker, promise]
 image:
   feature: abstract-10.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 comments: true
 share: true  
 ---

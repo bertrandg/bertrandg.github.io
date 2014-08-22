@@ -5,8 +5,6 @@ title: About Me
 tags: [bertrand gaillard, CV, about]
 image:
   feature: bg/405121.jpg
-  credit: miroha
-  creditlink: http://wall.alphacoders.com/big.php?i=405121
 share: true
 ---
 
