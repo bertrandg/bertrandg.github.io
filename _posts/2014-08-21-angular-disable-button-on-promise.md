@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AngularJS: Disable a button during an promise (like an http request)"
+title: "AngularJS: Disable a button during an http request (with a promise)"
 description: ""
 modified: 2014-08-21
 tags: [disabled, directive, angularjs, plunker, promise]
