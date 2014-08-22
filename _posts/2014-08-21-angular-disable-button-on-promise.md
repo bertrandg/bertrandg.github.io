@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "AngularJS: Disable a button during an http request"
+title: "AngularJS: Disable a button during an promise (like an http request)"
 description: ""
 modified: 2014-08-21
-tags: [disabled, directive, angularjs, plunker]
+tags: [disabled, directive, angularjs, plunker, promise]
 image:
   feature: abstract-10.jpg
   credit: dargadgetz
@@ -17,11 +17,11 @@ In my angular app, I wanted to disable a button during a REST api request, my fi
 It worked well but I found a better way to do that with a custom directive:
 
 {% highlight javascript %}
-app.directive('disableOnRequest', function ($parse) {
+app.directive('disableOnPromise', function ($parse) {
     return {
         restrict: 'A',
         compile: function($element, attr) {
-            var fn = $parse(attr.disableOnRequest);
+            var fn = $parse(attr.disableOnPromise);
             return function clickHandler(scope, element, attrs) {
                 element.on('click', function(event) {
                     attrs.$set('disabled', true);
