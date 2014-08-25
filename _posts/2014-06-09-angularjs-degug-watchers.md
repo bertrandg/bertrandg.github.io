@@ -5,9 +5,7 @@ description: ""
 modified: 2014-06-09
 tags: [angularjs, debug]
 image:
-  feature: abstract-3.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  feature: abstract-10.jpg
 comments: true
 share: true
 ---

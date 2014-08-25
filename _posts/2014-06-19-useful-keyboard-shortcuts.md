@@ -6,8 +6,6 @@ modified: 2013-08-20
 tags: [shortcuts, eclipse, firefox, chrome]
 image:
   feature: abstract-10.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 comments: true
 share: true  
 ---
