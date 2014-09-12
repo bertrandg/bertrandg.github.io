@@ -15,7 +15,8 @@ Liste of used vendors:
 
 Key features:
 use sass/compass and bootstrap to look clean
-use last version af angular 1.3
+yml translation files convert to json and then js with grunt tasks and used by angular-translate
+use last version af angular 1.3 with feature like ..
 image client resize, upload progress, directly add in library ad notif
 image editing with canvas and camanJs
 html5 drag and drop at multiples places
