@@ -12,6 +12,8 @@ share: true
 
 Blablabla
 
+NEED TO UPGRADE NG TO 1.3 AND USE array as syntax inside ng-repeat
+
 html5 DnD api
 
 transition with animate.css
