@@ -36,14 +36,14 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Paris
 future:      true
-highlighter: pygments
+highlighter: rouge
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
 
 # Amount of post to show on home page
-paginate: 3
+paginate: 2
 
 kramdown:
   auto_ids: true
