@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTML5 DnD: disable drop on input and textarea (firefox)"
+title: "HTML5 DnD: disable drop on input and textarea"
 description: ""
 modified: 2014-08-21
 tags: [dnd, directive, angularjs, plunker, draganddrop]
