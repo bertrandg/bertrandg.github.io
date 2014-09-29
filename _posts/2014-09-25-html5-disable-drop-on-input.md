@@ -3,7 +3,7 @@ layout: post
 title: "HTML5 DnD: disable drop on input and textarea"
 description: ""
 modified: 2014-08-21
-tags: [dnd, directive, angularjs, plunker, draganddrop]
+tags: [directive, angularjs, plunker, drag and drop, html5]
 image:
   feature: abstract-10.jpg
 comments: true
