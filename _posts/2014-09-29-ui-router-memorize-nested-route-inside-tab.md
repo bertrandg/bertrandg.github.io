@@ -15,13 +15,14 @@ On the second one, users can select a car brand and then a car model.
 
 Each tabs, brands and models have a state/route like this:
 
- - `app.tab1` > `#/tab1`
- - `app.tab2` > `#/tab2`
- - `app.tab2.brand` > `#/tab2/brand/:idBrand`
- - `app.tab2.brand.model` > `#/tab2/brand/:idBrand/model/:idModel`
- - `app.tab3` > `#/tab3`
+| <b>STATES</b> | <b>URLS</b> |
+| `app.tab1` | `#/tab1` |
+| `app.tab2` | `#/tab2` |
+| `app.tab2.brand` | `#/tab2/brand/:idBrand` |
+| `app.tab2.brand.model` | `#/tab2/brand/:idBrand/model/:idModel` |
+| `app.tab3` | `#/tab3` |
 
-At first time, when we click on tab2, we arrive on tab2 but no brand is selected.
+With the default behavior, when we click on tab2, we arrive on tab2 but no brand is selected.
 Then when we click on a brand, no model is selected.
 
 In my case this was really not optimal, I wanted to have directly:
