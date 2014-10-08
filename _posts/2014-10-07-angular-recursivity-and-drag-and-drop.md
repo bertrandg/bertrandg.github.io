@@ -17,7 +17,7 @@ I used the native html5 drag & drop api.<br>
 So it doesn't work on mobile/tablet devices: [http://caniuse.com/#feat=dragndrop](http://caniuse.com/#feat=dragndrop)
 
 #### <i class="icon icon-asterisk"></i> Animations:
-I used the nice css library [Animate.css](http://daneden.github.io/animate.css/)<br>
+Animations are done with the nice css library [Animate.css](http://daneden.github.io/animate.css/)<br>
 It is very easy to use it with angular and ngAnimate, see that (SASS syntax):
 {% highlight scss %}
 .li-condition {
@@ -50,7 +50,7 @@ Note that the new 1.3 ngRepeat `as` syntax is used there:<br>
 {% highlight html %}
 <li ng-repeat="element in data.elements | orderBy:'position' as filteredData track by element.id">...</li>
 {% endhighlight %}
-Like this, I can use the `filteredData` variable inside the ngRepeat node without recalculating it.
+Like this, I can use the `filteredData` variable inside this scope node without recalculating it.
 
 
 ### <i class="icon icon-asterisk"></i> Try it:
