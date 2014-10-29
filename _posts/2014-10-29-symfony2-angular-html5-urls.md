@@ -3,7 +3,7 @@ layout: post
 title: "Symfony2 & AngularJS: Pretty HTML5 urls (without #)"
 description: ""
 modified: 2014-10-29
-tags: [html5, angularjs, symfony2, history api]
+tags: [html5, angularjs, symfony2, history api, ui-router]
 image:
   feature: abstract-10.jpg
 comments: true

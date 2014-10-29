@@ -3,7 +3,7 @@ layout: post
 title: Recursivity exercice with AngularJS
 description: ""
 modified: 2014-07-25
-tags: [recursivity, angularjs, plunker]
+tags: [recursive, angularjs, plunker]
 image:
   feature: abstract-10.jpg
 comments: true
