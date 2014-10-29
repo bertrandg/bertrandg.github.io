@@ -52,7 +52,7 @@ appProject.config(function($locationProvider) {
 {% highlight html %}
 <head>
     <meta charset="utf-8">
-    <base href="{{ path('editor_edit', {id: project_id}) }}">
+    <base href="{ { path('editor_edit', {id: project_id}) } }">
 </head>
 {% endhighlight %}
 
