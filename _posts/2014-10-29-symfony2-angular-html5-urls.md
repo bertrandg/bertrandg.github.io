@@ -13,7 +13,7 @@ share: true
 
 In a current project, I have an Angular application inside a big Symfony2 website.
 
-So the SPA (Single Page Application) homepage is a symfony route which lead to a twig template.
+So the SPA (Single Page Application) homepage is a Symfony route which lead to a Twig template.
 
 
 ### <i class="icon icon-asterisk"></i> Why use HTML5 urls?
@@ -34,9 +34,9 @@ Now with HTML5 History API:
 * http://www.mywebsite.com/editor/projects/51/stories/16
 * http://www.mywebsite.com/editor/projects/51/stories/16/tasks/82
 
-Users can directly access any of these but **don't care** and **don't have to know** when they **really change "pages"** or **when a change is done inside the SPA** (In others words when it's Symfony2 routing or Angular routing which is in action).
+Users can directly access any of these but **don't care** and **don't have to know** when they **really change "pages"** or **when a change is done inside the SPA** (In others words when it's Symfony2 routing or Angular routing which is involved).
 
-Thez can always copy/paste urls and use next/prev browser buttons.
+They can always copy/paste urls and use next/prev browser buttons.
 
 
 ### <i class="icon icon-asterisk"></i> What on Angular side?
