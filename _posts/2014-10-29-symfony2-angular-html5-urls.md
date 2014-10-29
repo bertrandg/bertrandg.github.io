@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Symfony2 & AngularJS: Pretty HTML5 urls (without #)"
+title: "Symfony2 and AngularJS: Pretty HTML5 urls (without #)"
 description: ""
 modified: 2014-10-29
 tags: [html5, angularjs, symfony2, history api, ui-router]
@@ -9,7 +9,6 @@ image:
 comments: true
 share: true  
 ---
-
 
 In a current project, I have an Angular application inside a big Symfony2 website.
 
