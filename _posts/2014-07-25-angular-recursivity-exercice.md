@@ -28,7 +28,7 @@ You can test the production version here: [this-is-big.com](http://www.this-is-b
 This version is more complexe because all changes are instantly saved and some others things..
 
 <figure class="half">
-    <a href="{{site.baseurl}}/images/angular_recursivity/capture.png" target="_blank"><img src="{{site.baseurl}}/images/angular_recursivity/capture.png" alt=""></a>
+    <a href="images/angular_recursivity/capture.png" target="_blank"><img src="images/angular_recursivity/capture.png" alt=""></a>
     <figcaption>this-is-big.com - Segment builder</figcaption>
 </figure>
 
