@@ -29,7 +29,7 @@ This second version rocks for several reasons:
 
 I'm gonna talk more about the new Etin editor I coded.
 The last one used backboneJS, the widest used frontend framework at this time.
-And Flash was still alive and even necessary for some fonctionnalities like image resizing on client side, photo editing, and upload progress.
+And Flash was still alive and even needed for some fonctionnalities like image resizing on client side, photo editing, and upload progress.
 
 Now, 2 years and a half later, web development changed a lot.<br>
 Browsers are almost all evergreen, more and more html5 apis are usable (geoloc, history, canvas, drag&drop,..) and AngularJS has emerged and became the new standart frontend framework.
@@ -108,7 +108,7 @@ The goal wasn't to use as much as possible but it's a fact that with angular eco
 * **kineticjs**: An old but heavy library to work with canvas, documentation not really good and up to date.. I don't think I'm gonna use it for my next project.
 * **angular-bootstrap**: Usefull to work with **bootstrap-sass-official**, `$modal` service wich return a promise is really cool.
 * **restangular**: A must-have for your api calls.
-* **ng-file-upload**: Sadly, **restangular** doesn't handle progress event on upload request because it uses $http, [issue here](https://github.com/angular/angular.js/issues/1934). This lib handles it.
+* **ng-file-upload**: Sadly, **restangular** doesn't handle progress event on upload request because it uses `$http`, [issue here](https://github.com/angular/angular.js/issues/1934). This lib handles it.
 
 ### Screenshots:
 
