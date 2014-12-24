@@ -3,7 +3,7 @@ layout: post
 title: "Advanced Drag and Drop on recursive table"
 description: ""
 modified: 2014-08-27
-tags: [drag and drop, html5, directive, angularjs, plunker, recursive]
+tags: [drag and drop, html5, directive, angularjs, plunker, recursive, works]
 image:
   feature: abstract-10.jpg
 comments: true
