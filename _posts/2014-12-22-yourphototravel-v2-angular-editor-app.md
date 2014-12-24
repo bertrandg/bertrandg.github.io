@@ -66,7 +66,7 @@ Here are all frontend vendors used (`bower list --offline`).
 
 The goal wasn't to use as much as possible but it's a fact that with angular ecosystem, more and more libs are well-tested and works really well together.
 
-{% highlight yml %}
+{% highlight php %}
 ├─┬ AngularJS-Toaster#0.4.8
 │ ├── angular#1.3.2
 │ └─┬ angular-animate#1.3.2
