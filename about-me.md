@@ -42,22 +42,22 @@ In another life, I was an actionscript developer but.. Steve was right! :)
 
 ## Employments
 
-* *Sapiens Group* _(Lyon, FRANCE)_
+* *Sapiens Group* _(Lyon, FRANCE)_<br>
 January 2015 - Now
 
-* *AdThink Media* _(Lyon, FRANCE)_
+* *AdThink Media* _(Lyon, FRANCE)_<br>
 August 2013 - December 2014
 
-* *YourPhotoTravel* _(Chambery, FRANCE)_
+* *YourPhotoTravel* _(Chambery, FRANCE)_<br>
 December 2011 - Now
 
-* Ludia _(Montreal, CANADA)_
+* Ludia _(Montreal, CANADA)_<br>
 October 2010 - December 2011
 
-* TwistImage _(Montreal, CANADA)_
+* TwistImage _(Montreal, CANADA)_<br>
 March 2010 - September 2010
 
-* Megalo(s) _(Annecy, FRANCE)_
+* Megalo(s) _(Annecy, FRANCE)_<br>
 June 2007 - July 2009
 
 ## Formations
