@@ -2,7 +2,7 @@
 layout: post
 title: "Symfony2 and AngularJS: Pretty HTML5 urls (without #)"
 description: ""
-modified: 2014-10-29
+modified: 2015-04-02
 tags: [html5, angularjs, symfony2, history api, ui-router]
 image:
   feature: abstract-10.jpg
@@ -101,5 +101,40 @@ class EditorController extends Controller
 
 Don't worry for (few) people with old browsers not compatibles with HTML5 History API ([http://caniuse.com/#feat=history](http://caniuse.com/#feat=history)),
 Angular manage it really well going back with `#` when not supported!
+
+
+
+### <i class="icon icon-asterisk"></i> [Update] What about links inside the app?
+
+Like Paul said in the comments, there was a missing part in this tutorial, links inside the app.<br>
+[UI-Router](https://github.com/angular-ui/ui-router) with `uiSref` directive automatically generates the good `href` property depending on HTML5 mode activation or not.
+
+Here is what happens in details:
+
+- Imagine an angular application on this page:
+{% highlight yaml %}
+http://etin.yourphototravel.com/fr/editor/etin/6
+{% endhighlight %}
+
+- So the html base tag is:
+{% highlight html %}
+<base href="/fr/editor/etin/6/">
+{% endhighlight %}
+
+- We use UI-Router directive to directly point to a state:
+{% highlight html %}
+<a ui-sref="app.tab2.step({ idStep: step.id })">link</a>
+{% endhighlight %}
+
+- The directive generates this common SPA url in classic mode:
+{% highlight html %}
+<a href="#/chapter/7">link</a>
+{% endhighlight %}
+
+- And it builds this `href` for HTML5 urls mode :
+{% highlight html %}
+<a href="/fr/editor/etin/6/chapter/7">link</a>
+{% endhighlight %}
+Note that the **base tag href property is added** to have a full route from the domain.
 
 
