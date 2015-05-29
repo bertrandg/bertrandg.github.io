@@ -30,9 +30,9 @@ I really liked it!
 
 It is not comparable to Angular because it takes only care about UI but we can compare it to Angular directives.
 
-It’s interesting to note that Angular2 will have real similarities to ReactJS:
+Despite that, it’s interesting to note that Angular2 will have real similarities to ReactJS:
 
-* Everything is a component (Component model which is a key point of Web's future)
+* [Everything is a component](http://slides.com/gionkunz/back-to-the-future-angularjs2#/14/7) (Component model which is a key point of Web's future)
 * Unidirectionnal binding (It forces proper data flow architecture and better performance with long list for example)
 * [Isomorphic](http://isomorphic.net/) framework (Serve side render really good for performance and SEO)
 
