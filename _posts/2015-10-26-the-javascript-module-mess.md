@@ -2,7 +2,7 @@
 layout: post
 title: "Javascript: The module terms and librairies mess"
 description: ""
-modified: 2015-10-30
+modified: 2015-10-26
 tags: [javascript, es6]
 image:
   feature: abstract-10.jpg
