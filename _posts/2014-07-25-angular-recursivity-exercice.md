@@ -17,7 +17,7 @@ This is a recursive table, a main group can contain criterions, segments and oth
 
 ## Demo:
 
-<iframe style="border: 1px solid #bbb;width: 100%; height: 700px" src="http://embed.plnkr.co/M41k49/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>
+<iframe style="border: 1px solid #bbb;width: 100%; height: 700px" src="https://embed.plnkr.co/M41k49/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>
 
 Or you can clone this repository: [https://github.com/bertrandg/recursive-directive](https://github.com/bertrandg/recursive-directive)
 

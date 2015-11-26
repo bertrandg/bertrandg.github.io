@@ -31,4 +31,4 @@ Add this simple directive on input/textarea in your angular app and users won't 
 
 View it in action:
 
-<iframe style="border: 1px solid #bbb;width: 100%; height: 700px" src="http://embed.plnkr.co/8B0Qbl/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>
+<iframe style="border: 1px solid #bbb;width: 100%; height: 700px" src="https://embed.plnkr.co/8B0Qbl/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>

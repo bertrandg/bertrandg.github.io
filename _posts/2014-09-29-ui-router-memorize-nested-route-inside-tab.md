@@ -34,7 +34,7 @@ Solution came from catching `$stateChangeStart` and redirect to another route/st
 
 View it in action:
 
-<iframe style="border: 1px solid #bbb;width: 100%; height: 700px" src="http://embed.plnkr.co/FHA4QR/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>
+<iframe style="border: 1px solid #bbb;width: 100%; height: 700px" src="https://embed.plnkr.co/FHA4QR/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>
 
 To test this example in real conditions with browser `back` and `forward` buttons [click here](http://plnkr.co/edit/FHA4QR?p=preview) and then, in the preview panel, click on the icon 'enlarge' to view the url changing in the address bar.
 
