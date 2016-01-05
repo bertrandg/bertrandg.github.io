@@ -1,4 +1,4 @@
-title:            
+title:
 description:      Codes samples, tips, experiments,..
 disqus_shortname: bertrandggithubio
 #Your site's domain goes here. Leave localhost server or blank when working locally.
@@ -9,22 +9,22 @@ owner:
   name:           Bertrand Gaillard
   avatar:         avatar.jpg
   bio:            "Web Developer<br>Lyon, FRANCE"
-  email:          bertrandgaillard@hotmail.fr
+  email:
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
+  twitter:        https://twitter.com/bertrandggg
   github:         http://github.com/bertrandg
-  stackexchange:  
+  stackexchange:  http://stackoverflow.com/users/4717011/bertrandg
   linkedin:       http://www.linkedin.com/pub/bertrand-gaillard/21/3bb/a63
   flickr:         https://www.flickr.com/photos/37553716@N05/
 
 # Background image to be tiled on all pages
-background: 
+background:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-55413226-1
-google_verify:      
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # Links to include in top navigation
 # For external links add external: true
