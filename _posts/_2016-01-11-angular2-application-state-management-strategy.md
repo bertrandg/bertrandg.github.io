@@ -110,7 +110,7 @@ You can use Observables in javascript by installing RxJS (or Bacon.js). It will 
 #### RxJS with Angular2
 I see more and more RxJS Observables (which is embed inside Angular2) documentations and posts. It seems a good way to build a Flux-like architecture inside Angular2 application:
 [Angular2 Observable data services](http://coryrylan.com/blog/angular-2-observable-data-services)
-
+[Managing state in Angular 2 using RxJs](https://medium.com/front-end-developers/managing-state-in-angular-2-using-rxjs-b849d6bbd5a5#.w82rdllt5)
 
 # Solution bonus: Mixing both
 
