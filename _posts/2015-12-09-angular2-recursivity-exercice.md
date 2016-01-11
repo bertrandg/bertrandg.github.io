@@ -47,7 +47,7 @@ Instead of this one which avoid an unnecessary div node:
 </template>
 {% endhighlight %}
 
-Due to this [bug](https://github.com/angular/angular/issues/3442) that's is gonna be solved in the beta normally.
+Due to this [bug](https://github.com/angular/angular/issues/3442) which is gonna be solved in the beta normally.
 
 ## Beta is coming!
 
