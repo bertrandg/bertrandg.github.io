@@ -159,7 +159,8 @@ Angular2 is really linked to RxJS (which is in version 5 beta 1) and promotes it
 You can use RxJS observables to build stores-like inside a Angular2 application.
 
 [↪ Angular2 Observable data services.](http://coryrylan.com/blog/angular-2-observable-data-services)<br>
-[↪ Managing state in Angular 2 using RxJs.](https://medium.com/front-end-developers/managing-state-in-angular-2-using-rxjs-b849d6bbd5a5#.w82rdllt5)
+[↪ Managing state in Angular 2 using RxJs.](https://medium.com/front-end-developers/managing-state-in-angular-2-using-rxjs-b849d6bbd5a5#.w82rdllt5)<br>
+[↪ Reactive Data Flow in Angular 2](http://blog.lambda-it.ch/reactive-data-flow-in-angular-2/)
 
 
 <hr style="position: relative; top: 15px; margin-top: 30px;">
