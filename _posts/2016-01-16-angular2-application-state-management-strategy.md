@@ -100,7 +100,7 @@ A big advantage to use Redux is his amazing DevTools with features like time tra
 Go in this order:<br>
 [↪ A nice Flux cartoon explanations without code, concepts only.](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207#.otzw12wgi)<br>
 [↪ Another cartoon about Redux and his differences with Flux.](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6#.ub8gstdmo)<br>
-[↪ Best explanations about Redux from his author, Dan ABRAMOV, in 30 small live coding videos: PRICELESS!](https://egghead.io/series/getting-started-with-redux )<br>
+[↪ Best explanations about Redux from his author, Dan ABRAMOV, in 30 small live coding videos ★](https://egghead.io/series/getting-started-with-redux )<br>
 [↪ RDFM: Read the official documentation.](http://redux.js.org/)<br>
 [↪ Understand what is a Redux Middleware.](https://medium.com/@meagle/understanding-87566abcfb7a#.hrv12sczw)
 
@@ -160,8 +160,8 @@ You can use RxJS observables to build stores-like inside a Angular2 application.
 
 [↪ Angular2 Observable data services.](http://coryrylan.com/blog/angular-2-observable-data-services)<br>
 [↪ Managing state in Angular 2 using RxJs.](https://medium.com/front-end-developers/managing-state-in-angular-2-using-rxjs-b849d6bbd5a5#.w82rdllt5)<br>
-[↪ Reactive Data Flow in Angular 2](http://blog.lambda-it.ch/reactive-data-flow-in-angular-2/)
-
+[↪ Reactive Data Flow in Angular 2](http://blog.lambda-it.ch/reactive-data-flow-in-angular-2/)<br>
+[↪ Managing state in Angular2 using RxJS in a Redux-like way ★](http://victorsavkin.com/post/137821436516/managing-state-in-angular-2-applications)
 
 <hr style="position: relative; top: 15px; margin-top: 30px;">
 # <center>Solution 3 : NgRx Everything is an Observable</center>
