@@ -173,7 +173,8 @@ This approach is really promising and seems to be the next 'big thing' in the an
 
 Use this library with the included `async` pipe and `ChangeDetectionStrategy.OnPush` and you will have a massive performance boost in large ng2 applications.
 
-[↪ Read more explanations from the author @robwormald.](https://github.com/ngrx/store/issues/16#issuecomment-172027797)
+[↪ Read more explanations from the author @robwormald.](https://github.com/ngrx/store/issues/16#issuecomment-172027797)<br>
+[↪ Build a Better Angular 2 Application with Redux and ngrx. ★](http://onehungrymind.com/build-better-angular-2-application-redux-ngrx/)
 
 
 <center><blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">ngrx/store is fantastic. Check the example app. Clean Redux inspired reactive Angular 2. <a href="https://t.co/0SM1ONwefi">https://t.co/0SM1ONwefi</a> <a href="https://t.co/uq0DDLEP5m">pic.twitter.com/uq0DDLEP5m</a></p>&mdash; egghead.io (@eggheadio) <a href="https://twitter.com/eggheadio/status/688023660431556609">January 15, 2016</a></blockquote>
