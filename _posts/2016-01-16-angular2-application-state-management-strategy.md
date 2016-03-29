@@ -12,43 +12,43 @@ share: true
 
 <img style="float: right; max-width: 180px; margin: 0 0 10px 10px;" src="{{site.baseurl}}/images/ng2_state/angular2.png" />
 
-This is admitted for developers that state management is one of the toughest part to make an application growing safe and stay maintainable over time.
+Admittedly for most developers state management is one of the toughest parts of growing an application safely while staying maintainable over time.
 
-Angular1 doesn't promote specific way to take care about that except to add it inside services (instead of scopes/components) but change detection system makes useless options like immutability or observables.
+Angular1 doesn't promote a specific way to take care of this except for adding it inside services (instead of scopes/components) but the change detection system makes options like immutability or observables useless.
 
-Angular2 corrects it and allows us much more possibilities. We can now use at full power libraries like Flux/Redux, Immutable.js, RxJS,..<br>
-Lately, I documented me a lot about these Javascript libraries and concepts like **functional programming** & **reactive programming**.
+Angular2 corrects this and allows us many more possibilities. We can now use the full power of libraries like Flux/Redux, Immutable.js, RxJS,..<br>
+Lately, I've documented a lot about these Javascript libraries in addition to concepts like **functional programming** & **reactive programming**.
 All of this is really vast and exciting!
 
 
 ## ➜ Starting point
-I will start a job in few months and will be in charge of a new big webapp.
-There will be a lot of data to take care and interact with.
-Angular is the de facto choice because of his historical front framework company position and as a full stack solution.
-Angular2 will be used and I'm really happy about it but I want to avoid some pains I had on previous applications.
+I will start a job in a few months and will be in charge of a new big webapp.
+There will be a lot of data to take care of and interact with.
+Angular is the de facto choice because of its historical front framework company position and as a full stack solution.
+Angular2 will be used and I'm really happy about this but I want to avoid some of the pains that I've experienced on previous applications.
 
 
 ## ➜ Centralize data & unidirectional data flow
-Difficulties appears dues to data dispatched in lots of places and managed from everywhere. The result is an application hard to update, debug and test.
-This is why it is fundamental that **application state** stays at **one place only** inside the whole application and follows an **unidirectional data flow**.
+Difficulties can appear when data is dispatched in lots of places and managed from everywhere. The result is an application that is hard to update, debug and test.
+This is why it is fundamental that **application state** stays at **one place only** inside the entire application and follows a **unidirectional data flow**.
 
-This post **reflects my exploration** about different known and emerging ways of solving this.
+This post **reflects my exploration** about different current and emerging ways of solving this.
 
 
 <hr style="position: relative; top: 15px; margin-top: 30px;">
 # <center>Let's talk about immutability</center>
-Working with immutables objects means you always create a new one when you want to modify it.
+Working with immutable objects means that you always create a new object when you want to modify it.
 
-You can't mutate an object. If you want to add an item to an array, you create a new one containing all items plus the new one. You want to modify a boolean property on an object, you create a new one with all same properties and the modified boolean.
+You can't mutate an object. If you want to add an item to an array, you create a new array containing all of the existing items plus the new one. If you want to modify a boolean property on an object, you create a new object with all same properties as the one that you want to change and with the modified boolean.
 
-Immutability leads to better performances for tracking changes: just look at the object references (`objA !== objB`), if it didn't change, nothing to do, no need to check deeper.
+Immutability leads to better performances for tracking changes: just look at the object references (`objA !== objB`), if it didn't change, there's nothing to do, no need to check deeper.
 
 [↪ Introduction to immutability in Javascript](http://www.sitepoint.com/immutability-javascript/)
 
 
-## ➜ How use it
-We can do it with vanilla JS but there is no default type for it (contrary to Haskell, Scala,..) so we have to be careful and always keep it in mind.
-Otherwise there are libraries made for it and [↪Immutable.js](https://facebook.github.io/immutable-js/) is the most popular implementations of immutable data structures.
+## ➜ How to use it
+We can do this with vanilla JS but there is no default type for doing this (contrary to Haskell, Scala,..) so we have to be careful and always keep this in mind.
+Otherwise there are libraries made for this, and [↪Immutable.js](https://facebook.github.io/immutable-js/) is the most popular implementation of immutable data structures.
 
 [↪ Using immutable data structures in Javacript with Immutable.js](http://jlongster.com/Using-Immutable-Data-Structures-in-JavaScript)
 
@@ -57,7 +57,7 @@ Otherwise there are libraries made for it and [↪Immutable.js](https://facebook
 </center>
 
 ## ➜ Angular2 and Immutability
-Thanks to [↪ChangeDetectionStrategy](https://angular.io/docs/js/latest/api/core/ChangeDetectionStrategy-enum.html), we can know tell Angular2 to rerender a components only when his `inputs` objects change, so it plays well with immutable objects!
+Thanks to [↪ChangeDetectionStrategy](https://angular.io/docs/js/latest/api/core/ChangeDetectionStrategy-enum.html), we can now tell Angular2 to rerender a component only when its `inputs` object changes, so it plays well with immutable objects!
 
 [↪ Change detection in Angular2](http://victorsavkin.com/post/110170125256/change-detection-in-angular-2)<br>
 [↪ Immutability and encapsulation in Angular2](http://victorsavkin.com/post/133936129316/angular-immutability-and-encapsulation)<br>
@@ -67,16 +67,16 @@ Thanks to [↪ChangeDetectionStrategy](https://angular.io/docs/js/latest/api/cor
 
 <hr style="position: relative; top: 15px; margin-top: 30px;">
 # <center>Three main solutions</center>
-I identified three main ways to manage data properly: Use a Flux architecture like Redux, do it 'manually' with RxJS observables, or use the young Ngrx.
+I've identified three main ways to manage data properly: Use a Flux architecture like Redux, do it 'manually' with RxJS observables, or use the young Ngrx.
 
-All play well with immutables, Redux makes it a duty and it's as you want for others.
+All of these options play well with immutables, Redux makes it a duty and it's as you want for others.
 
 
 <hr style="position: relative; top: 15px; margin-top: 30px;">
-# <center>Solutions 1 : Let Redux takes care</center>
+# <center>Solutions 1 : Let Redux take care of it</center>
 [↪Redux](https://github.com/rackt/redux) is a tiny (2kb) **state container library** implementing an unidirectional data flow with **predictability** as the watchword. It has three main principles:
 
-* **State of the whole application is stored in an object tree** (single source of truth).
+* **The state of the whole application is stored in an object tree** (single source of truth).
 * **Application state is read only** (unidirectional data flow).
 * **State changes are written as pure functions** (why it works with immutable data).
 
@@ -87,20 +87,20 @@ All play well with immutables, Redux makes it a duty and it's as you want for ot
 
 
 ## ➜ Redux history
-Facebook firstly introduced Flux and then a lot of implementations appears: Reflux, Flummox, Fluxible, Fluxxor, Fynx, Fluxify,.. and Redux won the battle.
+Facebook was the first to introduce Flux and then a lot of other implementations appeared: Reflux, Flummox, Fluxible, Fluxxor, Fynx, Fluxify,.. and Redux won the battle.
 
 <center>
   <br><img style="max-width: 450px;" src="{{site.baseurl}}/images/ng2_state/redux.png" /><br>
 </center>
 
-A big advantage to use Redux is his amazing DevTools with features like time travel.
+A big advantage for using Redux is its amazing DevTools with features like time travel.
 
 
 ## ➜ Learn Redux smoothly
 Go in this order:<br>
 [↪ A nice Flux cartoon explanations without code, concepts only.](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207#.otzw12wgi)<br>
-[↪ Another cartoon about Redux and his differences with Flux.](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6#.ub8gstdmo)<br>
-[↪ Best explanations about Redux from his author, Dan ABRAMOV, in 30 small live coding videos ★](https://egghead.io/series/getting-started-with-redux )<br>
+[↪ Another cartoon about Redux and its differences from Flux.](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6#.ub8gstdmo)<br>
+[↪ Best explanations about Redux from its author, Dan ABRAMOV, in 30 small live coding videos ★](https://egghead.io/series/getting-started-with-redux )<br>
 [↪ RDFM: Read the official documentation.](http://redux.js.org/)<br>
 [↪ Understand what is a Redux Middleware.](https://medium.com/@meagle/understanding-87566abcfb7a#.hrv12sczw)
 
@@ -110,32 +110,32 @@ And then you can go deeper about asynchronous actions, using Middlewares like:<b
 
 
 ## ➜ Redux with Angular
-Redux is historically combined with React to render web application but you can use it to manage your data with any other front framework like Angular 1&2, Ember, Aurelia,..
+Redux is historically combined with React to render web application but you can use it to manage your data with any other front-end framework like Angular 1&2, Ember, Aurelia,..
 
-First, you need to understand how this architecture could be implemented with angular, [↪this post shows you how switch a Todo application using Angular1 to a Redux-like state management.](https://medium.com/@riadbenguella/understand-unidirectional-data-flow-by-practice-rewrite-an-angularjs-application-55cb5d8cb620#.iy8e20x6v)
+First, you need to understand how this architecture could be implemented with angular, [↪this post shows you how switch a Todo application using Angular1 to using Redux-like state management.](https://medium.com/@riadbenguella/understand-unidirectional-data-flow-by-practice-rewrite-an-angularjs-application-55cb5d8cb620#.iy8e20x6v)
 
 Then read these:<br>
 [↪ Managing state with Redux and Angular.](http://blog.rangle.io/managing-state-redux-angular/)<br>
-[↪ Build Angular2 application with Reflux and Immutable.js](http://blog.jhades.org/angular-2-application-architecture-building-flux-like-apps-using-redux-and-immutable-js-js/)<br>
+[↪ Build an Angular2 application with Reflux and Immutable.js](http://blog.jhades.org/angular-2-application-architecture-building-flux-like-apps-using-redux-and-immutable-js-js/)<br>
 [↪ How to use Redux in Angular2 Applications.](https://medium.com/google-developer-experts/angular-2-introduction-to-redux-1cf18af27e6e#.37etee7to)
 
-You have angular bindings library similar to [react-redux](https://github.com/rackt/react-redux) for React (totally optional):<br>
+You have angular bindings libraries similar to [react-redux](https://github.com/rackt/react-redux) for React (totally optional):<br>
 [↪ Ng-redux for Angular 1.X](https://github.com/wbuchwalter/ng-redux)<br>
 [↪ Ng2-redux for Angular 2.X](https://github.com/wbuchwalter/ng2-redux)
 
 
 <hr style="position: relative; top: 15px; margin-top: 30px;">
 # <center>Solution 2 : Do it manually with RxJS</center>
-If you impose to yourself (and your team) strict rules about state management in your application, you can build well maintainable application.
-Here are few tools and resources to help you achieve it. Immutable data are not mandatory.
+If you impose on yourself (and your team) strict rules about state management in your application, you can build well maintainable applications.
+Here are few tools and resources to help you achieve this. Immutable data are not mandatory.
 
 
 ## ➜ A unique facade
 Build your own convention to manage your data properly using a single façade following this article:<br>
 [↪ Anatomy of a large angular application](https://medium.com/@bojzi/anatomy-of-a-large-angular-application-f098e5e36994#.8syee5imx)
 
-This facade abstract the data management part from components. It reduces dependencies and allows more flexibility in developing the system.
-Under the hood, she can call multiple services.
+This facade abstracts the data management part from components. It reduces dependencies and allows more flexibility in developing the system.
+Under the hood, you can call multiple services.
 
 ## ➜ Observable streams
 <img style="float: right; margin: 0 0 10px 10px;" src="{{site.baseurl}}/images/ng2_state/rxjs.png" />
@@ -168,7 +168,7 @@ You can use RxJS observables to build stores-like inside a Angular2 application.
 <img style="float: right; max-width: 180px; margin: 0 0 10px 10px;" src="{{site.baseurl}}/images/ng2_state/ngrx.png" />
 [↪ Ngrx: RxJS powered state management for Angular2 apps, inspired by Redux.](https://github.com/ngrx/store)
 
-This library goes a step further and make every state part an observable, then components can subscribe to.
+This library goes a step further and makes every state part an observable, then components can subscribe to them.
 This approach is really promising and seems to be the next 'big thing' in the angular community as the following tweet from @egghead mentions.
 
 Use this library with the included `async` pipe and `ChangeDetectionStrategy.OnPush` and you will have a massive performance boost in large ng2 applications.
@@ -184,12 +184,12 @@ Use this library with the included `async` pipe and `ChangeDetectionStrategy.OnP
 
 <hr style="position: relative; top: 15px; margin-top: 30px;">
 # <center>Conclusion</center>
-I haven't made my choice actually. Redux is really attractive but **things are moving fast** (we are used to with javascript!).
+I haven't made my choice actually. Redux is really attractive but **things are moving fast** (as we are used to with javascript!).
 
-Keep an eye on **NG-NL**, the next big Angular conference in Amsterdam, many talks about these subjects:
+Keep an eye on **NG-NL**, the next big Angular conference in Amsterdam, there will be many talks about these subjects:
 
 <center>
 <a href="http://ng-nl.org/"><img style="max-width: 450px;" src="{{site.baseurl}}/images/ng2_state/ngnl.png" /></a>
 </center>
 
-Hope this helps some of you. Tells me about your thoughts about it and if I made mistakes.
+Hope this helps some of you. Tells me your thoughts about it and if I made mistakes.
