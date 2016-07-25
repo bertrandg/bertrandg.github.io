@@ -15,6 +15,8 @@ share: true
 Imagine you want to validate a field using another one with the last angular2 form API.
 In fact you can't do that directly in a custom field validator but a really simple way to do it exists and this is what i'm gonna show you there.
 
+## ➜ The form API
+
 Here are the three differents form elements in Angular2:
 
 - `FormControl`: A form entry, could be an `input[type=text]`, `textarea`, `select`,..
@@ -31,6 +33,8 @@ Each of these elements inherits from [`AbstractControl`](https://github.com/angu
 
 This module is awesome and allow to code complex things properly.
 Like you can see, `FormGroup` have a `validator` property and this is the one to use to solve our problem.
+
+## ➜ Slice our form
 
 So create a subform containing only fields needed for your validation and add your custom validator as parameter like this:
 ``` js
