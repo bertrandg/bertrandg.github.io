@@ -48,15 +48,15 @@ this.rangeForm = formBuilder.group({
 {% endhighlight %}
 
 Then create your main form including it:
-```js
+{% highlight js %}
 this.mainForm = formBuilder.group({
   'rangeForm': this.rangeForm,
   // others controls
 });
-```
+{% endhighlight %}
 
 Th HTML markup looks like this:
-```html
+{% highlight html %}
 <form [formGroup]="mainForm" (ngSubmit)="send()" novalidate>
 	<div [formGroup]="rangeForm">
 		<select formControlName="range">
@@ -68,10 +68,10 @@ Th HTML markup looks like this:
 	<!-- Others controls -->
 	<button type="submit" [disabled]="!mainForm.valid">SEND</button>
 </form>
-```
+{% endhighlight %}
 
 And finally, here is our custom validator accessing our 2 `FormControl` value to check if it fit well:
-```js
+{% highlight js %}
 specificValueInsideRange(group: ControlGroup) {
   const range = this.listRanges.find(r => r.id === Number(group.value.range));
   if(range && (group.value.specificValue < range.min || group.value.specificValue > range.max)) {
@@ -80,11 +80,11 @@ specificValueInsideRange(group: ControlGroup) {
     };
   }
 }
-```
+{% endhighlight %}
 
 Here it is, we got our custom fields validation, the `specificValueInsideRange` validator function will be called anytime something change inside `rangeForm`.
 
 ## ➜ Demo
 
 You can check this example in the following plunker:
-<iframe style="border: 1px solid #bbb;width: 100%; height: 400px" src="https://embed.plnkr.co/b6ddFy/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>
+<iframe style="border: 1px solid #bbb;width: 100%; height: 550px" src="https://embed.plnkr.co/b6ddFy/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>
