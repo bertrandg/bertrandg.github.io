@@ -37,7 +37,7 @@ Like you can see, `FormGroup` have a `validator` property and this is the one to
 ## ➜ Slice our form
 
 So create a subform containing only fields needed for your validation and add your custom validator as parameter like this:
-``` js
+{% highlight js %}
 // Note: formBuilder.group(...) === new FormGroup(...)
 this.rangeForm = formBuilder.group({
   'range':          new FormControl('', Validators.required),
@@ -45,7 +45,7 @@ this.rangeForm = formBuilder.group({
 }, {
   validator: this.specificValueInsideRange.bind(this)
 });
-```
+{% endhighlight %}
 
 Then create your main form including it:
 ```js
