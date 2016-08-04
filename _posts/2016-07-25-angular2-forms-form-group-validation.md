@@ -87,4 +87,4 @@ Here it is, we got our custom fields validation, the `specificValueInsideRange` 
 ## ➜ Demo
 
 You can check this example in the following plunker:
-<iframe style="border: 1px solid #bbb;width: 100%; height: 550px" src="https://embed.plnkr.co/b6ddFy/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>
+<iframe style="border: 1px solid #bbb;width: 100%; height: 600px" src="https://embed.plnkr.co/b6ddFy/?t=run" frameborder="0" allowfullscreen="allowfullscreen">Loading plunk...</iframe>
