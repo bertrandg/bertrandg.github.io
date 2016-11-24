@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Use Typescript and VS Code to developp your Node application"
+title: "Use Typescript and VS Code to developp your NodeJS application"
 description: ""
 modified: 2016-11-25
 tags: [node, typescript, vscode]
@@ -18,90 +18,116 @@ I didn't find a place with all explanations up to date and using latest tools so
 
 Scroll down to find full JSON files details.
 
-## ➜ A. Produce code compatible with Node:
+## A. Produce code compatible with Node:
 
-NodeJS needs compatible JS files in input to work, so configure your tsconfig.json with these properties:
- - `"target": "es6"` Or `"es5"` if you are using a Node version older than 6.
- - `"module": "commonjs"` It tells compiler to convert all ES6 modules(`import`/`export`) to CommonJS modules (`require`/`module.exports`).
+NodeJS needs compatible JS files in input to work, so configure your <b>tsconfig.json</b> with these properties:
+
+- `"target": "es6"` Or `"es5"` if you are using a Node version older than 6.
+- `"module": "commonjs"` It tells compiler to convert all ES6 modules (`import`/`export`) to CommonJS modules (`require`/`module.exports`).
 
 
-## ➜ B. Always lunch the app with transpiled JS files from latest TS files:
- - VSCode automatically displays your TS error, you don't need to run the Typescript compiler in watch mode, in tsconfig.json, add property `"watch": false`.
+## B. Always lunch the app with transpiled JS files from latest TS files:
+
+### ➜ VSCode automatically displays your TS error.
+
+You don't need to run the Typescript compiler in watch mode.
+Inside <b>tsconfig.json</b>, add property `"watch": false`.
 
 <center>
-  <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/code1.png" /><br>
+  <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/code1.png" /><br><br>
 </center>
 
- - Use VSCode `lunch.json` config file to configure app debugging and `tasks.json` to create a task which run Typescript compiler.
+### ➜ Configure VSCode debugging. 
 
-Inside `lunch.json`, add property `"preLaunchTask": "tsc"` to force typescript compilation before app start. 
-Inside `tasks.json`, add properties `"command": "tsc"` and `"isShellCommand": true` to make a task named 'tsc' running Typescript compiler.
-Inside `tsconfig.json`, add property `"noEmitOnError": true` to make compiler throw error when something wrong. 
+Use <b>lunch.json</b> config file for debugging session start and <b>tasks.json</b> to create a task which run Typescript compiler.
 
-Now when starting your app with `F5` (Or `Debug panel` > `Start Debugging`), if your TS files are not valid you will see the following message letting you stop debugging to correct it before lunch it again: 
-"Build error has been detected during preLaunchTask 'tsc-compiler'. DEBUG ANYWAY / CLOSE"
+- Inside <b>lunch.json</b>, add property `"preLaunchTask": "tsc"` to force typescript compilation before app start. 
+- Inside <b>tasks.json</b>, add properties `"command": "tsc"` and `"isShellCommand": true` to make a task named <b>tsc</b> running Typescript compiler.
+- Inside <b>tsconfig.json</b>, add property `"noEmitOnError": true` to make compiler throw error when something wrong. 
 
-<center>
-  <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/code2.png" /><br>
-</center>
+<br>Now when starting your app with <b>F5</b> (Or <b>Debug panel</b> > <b>Start Debugging</b>), if your TS files are not valid you will see the following message letting you stop debugging to correct it before lunch it again: 
 
-
-## ➜ C. Debug with breakpoints inside TS files:
- - Add MAP files support inside `tsconfig.json` > `"sourceMap": true` and inside `lunch.json` > `"sourceMaps": true`.
- - Having TS files separated from your JS/MAP files is a good practise.
-
-To implement it, inside `tsconfig.json` add property `"outDir": "dist"`.
-And to make breakpoint works, inside `lunch.json` add property `"outDir": "${workspaceRoot}/dist"`
+<center><blockquote>Build error has been detected during preLaunchTask 'tsc-compiler'. DEBUG ANYWAY / CLOSE</blockquote></center>
 
 <center>
-  <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/code3.png" /><br>
+  <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/code2.png" /><br><br>
 </center>
 
 
-## ➜ D. Use @typings/* to add external module definition files:
- - Run this command to install node definition file and lodash and express definition files `npm i --save-dev "@typings/node" "@typings/lodash" "@typings/express"`
+## C. Debug with breakpoints inside TS files:
 
-Keep in mind that your "library" vs "library definition" versions is important, it can leads you to cases like:
- - Typescript say something is good but at execution it throws an error because wrong definition file!
- - Typescript tells you this function doesn't exist in this module or with others parameters but in really it does!
+### ➜ Add MAP files support.
 
-To avoid this, compare these 2 versions numbers (https://libraries.io/npm/@types%2Fnode/versions & https://libraries.io/npm/@types%2Flodash/versions) and don't hesitate to go throught you installed definition files.
+- Inside <b>tsconfig.json</b>, add property `"sourceMap": true`.
+- Inside <b>lunch.json</b>, add property `"sourceMaps": true`.
+
+### ➜ Help VSCode find JS/MAP files link to your TS files.
+
+Having TS files and JS/MAP files in separate folders is a good practise.
+To implement it:
+- Inside <b>tsconfig.json</b>, add property `"outDir": "dist"`.
+- Inside <b>lunch.json</b>, add property `"outDir": "${workspaceRoot}/dist"`
 
 <center>
-  <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/code4.png" /><br>
+  <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/code3.png" /><br><br>
 </center>
 
 
-## ➜ E. Know when use ES6 import/export module syntax or CommonJS require syntax:
- - ES6 module syntax
-	Use it between all your project TS files.
-	Use it to import external modules having a definition file (node/express/lodash,.. in my case).
-PHOTO4
+## D. Use @typings/* to add external module definition files:
 
- - CommonJS module syntax (`require`)
-	Use it to import external modules without a definition file.
-	Typescript is ok with it because `require` is inside the node definition file we import from `@typings/node`.
+- Run this command to install node definition file and lodash and express definition files `npm i --save-dev "@typings/node" "@typings/lodash" "@typings/express"`
+
+It installs definition like any others node modules and typescript compiler automatically check `/node_modules/@typings/moduleX` when running.
+
+Keep in mind that your <u>library</u> vs <u>library definition</u> versions could be different, it can leads you to "weird" cases like:
+- Typescript say something is good but at execution it throws an error because wrong definition file!
+- Typescript tells you this function doesn't exist in this module or with differents parameters but in really it does!
+
+To avoid this, compare these 2 versions and don't hesitate to go throught your installed definition files.
+
+For example, you can see all available versions here:
+- [lodash versions](https://libraries.io/npm/lodash/versions)
+- [@types/lodash versions](https://libraries.io/npm/@types%2Flodash/versions)
+
+<center>
+  <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/code4.png" /><br><br>
+</center>
+
+
+## E. Know when use ES6 or CommonJS module syntax:
+
+### ➜ ES6 module syntax (`import`/`export`)
+
+Use it between all your project TS files.
+Use it to import external modules having a definition file (node/express/lodash,.. in my case).
+
+### ➜ CommonJS module syntax (`require`/`module.exports`)
+
+Use it to import external modules without a definition file.
+Typescript is ok with it because `require` definition is inside the node definition file we import from `@typings/node`.
 	
-I know it's weird to mix ES6 and CommonJS module syntax at first but keep in mind it will be always CommonJS require inside your transpiled JS files.
+It's weird to mix ES6 and CommonJS module syntax at first but keep in mind it will be always CommonJS modules inside your transpiled JS files.
 	
 
-## ➜ F. Make your custom interface definitions available everywhere in your project:
-In my humble opinion, import interface definitions in your TS files while they are here just to development workflow and disappears when transpiled to JS files is a bad practise.
+## F. Make your custom types/interfaces definitions available everywhere:
+
+In my humble opinion, `import` interface definitions in your TS files while they are here just to development workflow and disappears when transpiled to JS files is a bad practise.
 
 So, to make it accessible from everywhere inside your project, here is my solution (maybe better way but works fine for me):
+
 Create `/typings/index.d.ts` and inside it, reference all your definition type files like this: 
-{% highlight js %}
-/// <reference path="defA.d.ts" /> 
-/// <reference path="defB.d.ts" />
+
+{% highlight html %}
+/// <reference path="tables.d.ts" /> 
+/// <reference path="store/stateA.d.ts" />
+/// <reference path="store/stateB.d.ts" />
 {% endhighlight %}
 
 
-## ➜ Here is a github repository:
+<br>
+# Config files sources:
 
->>> github link typescript+node+express starter
-
-
-### ➜ /PACKAGE.JSON
+### ➜ File "/package.json":
 
 {% highlight js %}
 {
@@ -128,7 +154,8 @@ Create `/typings/index.d.ts` and inside it, reference all your definition type f
 }
 {% endhighlight %}
 
-### ➜ /TSCONFIG.JSON
+
+### ➜ File "/tsconfig.config":
 
 {% highlight js %}
 {
@@ -153,7 +180,7 @@ Create `/typings/index.d.ts` and inside it, reference all your definition type f
 }
 {% endhighlight %}
 
-### ➜ /.VSCODE/TASKS.JSON
+### ➜ File "/.vscode/tasks.json":
 
 {% highlight js %}
 {
@@ -164,7 +191,7 @@ Create `/typings/index.d.ts` and inside it, reference all your definition type f
 }
 {% endhighlight %}
 
-### ➜ /.VSCODE/LUNCH.JSON
+### ➜ File "/.vscode/lunch.json":
 
 {% highlight js %}
 {
@@ -187,8 +214,3 @@ Create `/typings/index.d.ts` and inside it, reference all your definition type f
     ]
 }
 {% endhighlight %}
-
-
-
-
-
