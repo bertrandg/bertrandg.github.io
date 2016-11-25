@@ -124,11 +124,11 @@ It's weird to mix ES6 and CommonJS module syntax at first but keep in mind it wi
 
 ## F. Make your custom types/interfaces definitions available everywhere:
 
-In my humble opinion, `import` interface definitions in your TS files while they are here just to development workflow and disappears when transpiled to JS files is a bad practise.
+In my humble opinion, import interfaces definitions in your TS files while they are here just to development workflow and disappear when transpiled to JS files is a bad practise.
 
-So, to make it accessible from everywhere inside your project, here is my solution (maybe better way but works fine for me):
+So, to make it accessible from everywhere inside your project, here is my solution (maybe better ways but works fine for me):
 
-Create `/typings/index.d.ts` and inside it, reference all your definition type files like this: 
+Create a `/typings/index.d.ts` file and reference all your definitions files inside like this: 
 
 {% highlight html %}
 /// <reference path="tables.d.ts" /> 
