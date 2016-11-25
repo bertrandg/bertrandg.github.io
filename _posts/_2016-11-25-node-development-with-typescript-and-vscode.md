@@ -81,7 +81,7 @@ To implement it:
 
 - Run this command to install node definition file and lodash and express definition files `npm i --save-dev "@typings/node" "@typings/lodash" "@typings/express"`
 
-It installs definition like any others node modules and typescript compiler automatically check `/node_modules/@typings/moduleX` when running.
+It installs definitions files like any others node modules and typescript compiler automatically check `/node_modules/@typings/moduleX` when running.
 
 Keep in mind that your <u>library</u> vs <u>library definition</u> versions could be different, it can leads you to "weird" cases like:
 - Typescript say something is good but at execution it throws an error because wrong definition file!
