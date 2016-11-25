@@ -65,7 +65,7 @@ Use <b>lunch.json</b> config file for debugging session start and <b>tasks.json<
 - Inside <b>tsconfig.json</b>, add property `"sourceMap": true`.
 - Inside <b>lunch.json</b>, add property `"sourceMaps": true`.
 
-### ➜ Help VSCode find JS/MAP files link to your TS files.
+### ➜ Help VSCode find JS/MAP files linked to your TS files.
 
 Having TS files and JS/MAP files in separate folders is a good practise.
 To implement it:
