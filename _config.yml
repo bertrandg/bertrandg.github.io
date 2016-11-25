@@ -51,6 +51,8 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: true
+  input: GFM
+  hard_wrap: false
 
   coderay:
     coderay_line_numbers: nil
