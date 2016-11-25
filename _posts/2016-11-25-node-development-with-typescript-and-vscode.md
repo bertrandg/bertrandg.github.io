@@ -110,8 +110,8 @@ For example, you can see all availables versions here:
 
 ### ➜ ES6 module syntax (`import`/`export`)
 
-Use it between all your project TS files.
-Use it to import external modules having definitions files (node/express/lodash,.. in my case).
+- Use it between all your project TS files.
+- Use it to import external modules having definitions files (node/express/lodash,.. in my case).
 
 ### ➜ CommonJS module syntax (`require`/`module.exports`)
 
