@@ -78,7 +78,7 @@ To implement it:
 </center>
 
 
-## D. Use @typings/* to add external module definition files:
+## D. Use @typings/* to add external module definitions files:
 
 - Run this command to install node definition file and lodash and express definition files:
 `npm i --save-dev "@typings/node" "@typings/lodash" "@typings/express"`
@@ -99,10 +99,10 @@ Keep in mind that your <u>library</u> vs <u>library definition</u> versions coul
 
 To avoid this, compare these 2 versions and don't hesitate to go throught your installed definition files.
 
-For example, you can see all available versions here:
+For example, you can see all availables versions here:
 
 - [lodash versions](https://libraries.io/npm/lodash/versions)
-- [@types/lodash versions](https://libraries.io/npm/@types%2Flodash/versions)
+- [@types/lodash versions](https://libraries.io/npm/@types%2Flodash/versions)<br>
 
 
 ## E. Know when use ES6 or CommonJS module syntax:
