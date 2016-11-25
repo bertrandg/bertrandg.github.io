@@ -11,6 +11,10 @@ share: true
 ---
 
 
+<center>
+  <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/logos.png" /><br>
+</center>
+
 I'm using typescript daily with angular since 6 months and see the positive impact on my workflow and the code I produce.
 So I decided to use it on the Node side too, but it wasn't an easy task to have the setup I wanted!
 
