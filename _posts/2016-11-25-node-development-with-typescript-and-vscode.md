@@ -115,11 +115,12 @@ For example, you can see all availables versions here:
 
 ### ➜ CommonJS module syntax (`require`/`module.exports`)
 
-Use it to import external modules without a definition file.
+- Use it only to import external modules without definitions files.
 Typescript is ok with it because `require` definition is inside the node definition file we import from `@typings/node`.
 	
 It's weird to mix ES6 and CommonJS module syntax at first but keep in mind it will be always CommonJS modules inside your transpiled JS files.
-	
+<br><br>
+
 
 ## F. Make your custom types/interfaces definitions available everywhere:
 
