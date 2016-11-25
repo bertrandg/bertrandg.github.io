@@ -80,7 +80,8 @@ To implement it:
 
 ## D. Use @typings/* to add external module definition files:
 
-- Run this command to install node definition file and lodash and express definition files `npm i --save-dev "@typings/node" "@typings/lodash" "@typings/express"`
+- Run this command to install node definition file and lodash and express definition files:
+`npm i --save-dev "@typings/node" "@typings/lodash" "@typings/express"`
 
 It installs definitions files like any others node modules and Typescript compiler automatically check `/node_modules/@typings/lodash` when looking for definitions.
 
@@ -88,6 +89,7 @@ Some node modules now include definitions files directly bundled with it (angula
 [More details about it.](https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html)
 
 Keep in mind that your <u>library</u> vs <u>library definition</u> versions could be different, it can leads you to "weird" cases like:
+
 - Typescript say something is good but at execution it throws an error because wrong definition file!
 - Typescript tells you this function doesn't exist in this module or with differents parameters but in really it does!
 
