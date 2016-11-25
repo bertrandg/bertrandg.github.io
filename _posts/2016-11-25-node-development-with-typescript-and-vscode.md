@@ -130,8 +130,8 @@ Create `/typings/index.d.ts` and inside it, reference all your definition type f
 /// <reference path="store/stateB.d.ts" />
 {% endhighlight %}
 
-
 <br>
+
 # Config files sources:
 
 ### ➜ File "/package.json":
