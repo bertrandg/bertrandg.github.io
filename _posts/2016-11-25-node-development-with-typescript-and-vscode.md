@@ -15,7 +15,7 @@ share: true
   <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/logos.png" /><br>
 </center>
 
-I'm using typescript daily with angular since 6 months and see the positive impact on my workflow and the code I produce.
+I'm using Typescript daily with angular since 6 months and see the positive impact on my workflow and the code I produce.
 So I decided to use it on the Node side too, but it wasn't an easy task to have the setup I wanted!
 
 I didn't find a place with all explanations up to date and using latest tools so I post it there to hopefully help some of you. ;)
@@ -45,7 +45,7 @@ Inside <b>tsconfig.json</b>, add property `"watch": false`.
 
 Use <b>lunch.json</b> config file for debugging session start and <b>tasks.json</b> to create a task which run Typescript compiler.
 
-- Inside <b>lunch.json</b>, add property `"preLaunchTask": "tsc"` to force typescript compilation before app start. 
+- Inside <b>lunch.json</b>, add property `"preLaunchTask": "tsc"` to force Typescript compilation before app start. 
 - Inside <b>tasks.json</b>, add properties `"command": "tsc"` and `"isShellCommand": true` to make a task named <b>tsc</b> running Typescript compiler.
 - Inside <b>tsconfig.json</b>, add property `"noEmitOnError": true` to make compiler throw error when something wrong. 
 
@@ -81,7 +81,7 @@ To implement it:
 
 - Run this command to install node definition file and lodash and express definition files `npm i --save-dev "@typings/node" "@typings/lodash" "@typings/express"`
 
-It installs definitions files like any others node modules and typescript compiler automatically check `/node_modules/@typings/lodash` when looking for definitions.
+It installs definitions files like any others node modules and Typescript compiler automatically check `/node_modules/@typings/lodash` when looking for definitions.
 
 Some node modules now include definitions files directly bundled with it (angular2 do it). 
 [More details about it.](https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html)
