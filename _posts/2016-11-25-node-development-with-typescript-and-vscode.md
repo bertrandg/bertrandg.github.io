@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Use Typescript and VS Code to developp your NodeJS application"
+title: "Use Typescript and VS Code to develop your NodeJS application"
 description: ""
 modified: 2016-11-25
 tags: [node, typescript, vscode]
