@@ -51,7 +51,7 @@ Use <b>lunch.json</b> config file for debugging session start and <b>tasks.json<
 
 <br>Now when starting your app with <b>F5</b> (Or <b>Debug panel</b> > <b>Start Debugging</b>), if your TS files are not valid you will see the following message letting you stop debugging to correct it before lunch it again: 
 
-<center><blockquote>Build error has been detected during preLaunchTask 'tsc-compiler'. DEBUG ANYWAY / CLOSE</blockquote></center>
+<center><blockquote>Build error has been detected during preLaunchTask 'tsc'. DEBUG ANYWAY / CLOSE</blockquote></center>
 
 <center>
   <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/code2.png" /><br><br>
@@ -69,6 +69,7 @@ Use <b>lunch.json</b> config file for debugging session start and <b>tasks.json<
 
 Having TS files and JS/MAP files in separate folders is a good practise.
 To implement it:
+
 - Inside <b>tsconfig.json</b>, add property `"outDir": "dist"`.
 - Inside <b>lunch.json</b>, add property `"outDir": "${workspaceRoot}/dist"`
 
