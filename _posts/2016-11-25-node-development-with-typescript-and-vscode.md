@@ -135,7 +135,7 @@ Create `/typings/index.d.ts` and inside it, reference all your definition type f
 
 ### ➜ File "/package.json":
 
-{% highlight js %}
+{% highlight json %}
 {
   "name": "demo-project",
   "version": "0.0.0",
@@ -163,7 +163,7 @@ Create `/typings/index.d.ts` and inside it, reference all your definition type f
 
 ### ➜ File "/tsconfig.config":
 
-{% highlight js %}
+{% highlight json %}
 {
   "compilerOptions": {
     "target": "es6",
@@ -188,7 +188,7 @@ Create `/typings/index.d.ts` and inside it, reference all your definition type f
 
 ### ➜ File "/.vscode/tasks.json":
 
-{% highlight js %}
+{% highlight json %}
 {
     "version": "0.1.0",
     "command": "tsc",
@@ -199,7 +199,7 @@ Create `/typings/index.d.ts` and inside it, reference all your definition type f
 
 ### ➜ File "/.vscode/lunch.json":
 
-{% highlight js %}
+{% highlight json %}
 {
     "version": "0.2.0",
     "configurations": [
