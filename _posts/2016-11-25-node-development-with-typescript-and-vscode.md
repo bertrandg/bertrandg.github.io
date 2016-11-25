@@ -85,6 +85,10 @@ To implement it:
 
 It installs definitions files like any others node modules and Typescript compiler automatically check `/node_modules/@typings/lodash` when looking for definitions.
 
+<center>
+  <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/code4.png" /><br><br>
+</center>
+
 Some node modules now include definitions files directly bundled with it (angular2 do it). 
 [More details about it.](https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html)
 
@@ -96,12 +100,9 @@ Keep in mind that your <u>library</u> vs <u>library definition</u> versions coul
 To avoid this, compare these 2 versions and don't hesitate to go throught your installed definition files.
 
 For example, you can see all available versions here:
+
 - [lodash versions](https://libraries.io/npm/lodash/versions)
 - [@types/lodash versions](https://libraries.io/npm/@types%2Flodash/versions)
-
-<center>
-  <br><img style="max-width: 100%;" src="{{site.baseurl}}/images/node_typescript/code4.png" /><br><br>
-</center>
 
 
 ## E. Know when use ES6 or CommonJS module syntax:
