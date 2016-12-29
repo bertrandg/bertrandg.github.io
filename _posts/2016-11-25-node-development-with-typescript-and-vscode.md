@@ -126,15 +126,7 @@ It's weird to mix ES6 and CommonJS module syntax at first but keep in mind it wi
 
 In my humble opinion, import interfaces definitions in your TS files while they are here just to development workflow and disappear when transpiled to JS files is a bad practise.
 
-So, to make it accessible from everywhere inside your project, here is my solution (maybe better ways but works fine for me):
-
-Create a `/typings/index.d.ts` file and reference all your definitions files inside like this: 
-
-{% highlight html %}
-/// <reference path="tables.d.ts" /> 
-/// <reference path="store/stateA.d.ts" />
-/// <reference path="store/stateB.d.ts" />
-{% endhighlight %}
+So, to make it accessible from everywhere inside your project (and never `import`/`export` them), declare all your interfaces inside definitions files `*.d.ts`.
 
 
 # Config files sources:
