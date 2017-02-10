@@ -19,10 +19,13 @@ Working only with streams to manage all side effects is hard at first but once y
 ### ➜ Simple need to start:
 
 Imagine you have these needs:
-When ACTION_X --> callApiX() --> ACTION_X_SUCCESS or ACTION_X_FAIL
-When ACTION_Y --> callApiY() --> ACTION_Y_SUCCESS or ACTION_Y_FAIL
 
-Nothing special here: An `action` > an HTTP request > another `action` depending on success or not.
+- When ACTION_X --> callApiX() --> ACTION_X_SUCCESS or ACTION_X_FAIL
+- When ACTION_Y --> callApiY() --> ACTION_Y_SUCCESS or ACTION_Y_FAIL
+
+Nothing special here:
+
+An `action` > an HTTP request > another `action` depending on success or not.
 In case of success, results are stored inside state using `reducers`.
 
 This corresponds to these `@effects` code:
