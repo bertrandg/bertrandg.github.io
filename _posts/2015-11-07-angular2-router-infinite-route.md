@@ -3,7 +3,7 @@ layout: post
 title: "Angular2: Infinite loop route component"
 description: ""
 modified: 2015-11-07
-tags: [angular2, plunker]
+tags: [angular, plunker]
 image:
   feature: abstract-10.jpg
 comments: true

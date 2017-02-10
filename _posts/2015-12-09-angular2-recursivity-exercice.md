@@ -3,7 +3,7 @@ layout: post
 title: "Angular2: Recursivity exercice"
 description: ""
 modified: 2015-12-09
-tags: [angular2, typescript, plunker]
+tags: [angular, typescript, plunker]
 image:
   feature: abstract-10.jpg
 comments: true

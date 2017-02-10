@@ -3,7 +3,7 @@ layout: post
 title: "Angular2: Custom validation using multiple form fields"
 description: ""
 modified: 2016-07-25
-tags: [angular2, forms, validation]
+tags: [angular, forms, validation]
 image:
   feature: abstract-10.jpg
 comments: true

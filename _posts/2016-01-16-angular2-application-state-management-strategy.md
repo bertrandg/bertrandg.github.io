@@ -3,7 +3,7 @@ layout: post
 title: "Angular2: Select a state management strategy"
 description: ""
 modified: 2016-01-16
-tags: [angular2, redux, immutables, rxjs, observables]
+tags: [angular, redux, immutables, rxjs, observables]
 image:
   feature: abstract-10.jpg
 comments: true
