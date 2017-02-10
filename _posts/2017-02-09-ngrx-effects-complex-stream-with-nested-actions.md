@@ -55,6 +55,7 @@ And if it hasn't, call it first, then call callApiY() and finish with ACTION_Y_S
 Here is a simple workaround to solve it elegantly:
 
 {% highlight javascript %}
+
 // Nothing changed here, works as previously.
 @Effect() actionX$ = this.updates$
     .ofType('ACTION_X')
@@ -63,13 +64,14 @@ Here is a simple workaround to solve it elegantly:
         .map(data => ({type: 'ACTION_X_SUCCESS', payload: data}))
         .catch(err => Observable.of({type: 'ACTION_X_FAIL', payload: err}))
 
+
+// Here is the magic.
 @Effect() actionY$ = this.updates$
     .ofType('ACTION_Y')
     .map(toPayload)
     // Retrieve part of the current state.
     .withLatestFrom(this.store.select(state => state.someBoolean))
     .switchMap(([payload, someBoolean]) => {
-
         // Function calling callApiY() and acting accordingly.
         const callHttpY = v => {
             return this.api.callApiY(v)
