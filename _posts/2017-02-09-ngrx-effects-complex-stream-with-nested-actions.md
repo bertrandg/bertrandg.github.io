@@ -60,7 +60,7 @@ Here is a simple workaround to solve it elegantly:
 
 {% highlight javascript %}
 
-// Nothing changed here, works as previously.
+// Nothing changed here, works as previously. 
 @Effect() actionX$ = this.updates$
     .ofType('ACTION_X')
     .map(toPayload)
