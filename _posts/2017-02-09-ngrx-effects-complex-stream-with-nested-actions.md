@@ -36,6 +36,8 @@ This corresponds to these `@effects` code:
 <div class="mygists">
 <script src="https://gist.github.com/bertrandg/6207c52d8d58d4ca6f2ed924131a65c9.js"></script>
 </div>
+dd
+{% gist bertrandg/6207c52d8d58d4ca6f2ed924131a65c9 %}
 <br>
 
 
