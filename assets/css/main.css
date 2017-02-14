@@ -4277,11 +4277,11 @@ body {
   color: #0e4071 !important;
 }
 
-.entry-content table {
+:not(.mygists) .entry-content table {
   width: 100%;
 }
 
-.entry-content table td {
+:not(.mygists) .entry-content table td {
   padding: 10px 0;
   border-bottom: 1px solid #bbbbbb;
 }
