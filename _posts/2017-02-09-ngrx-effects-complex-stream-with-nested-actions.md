@@ -26,7 +26,9 @@ Imagine you have these needs:
 Nothing special here:
 
 An `action` > an HTTP request > another `action` depending on success or not.
+
 In case of success, results are stored inside state using `reducers`.
+
 
 This corresponds to these `@effects` code:
 
