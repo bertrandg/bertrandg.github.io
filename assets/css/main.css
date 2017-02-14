@@ -412,7 +412,7 @@ pre::-webkit-scrollbar-thumb:horizontal {
           border-radius: 4px;
 }
 
-div:not(.mygists) .highlight {
+:not(.mygists) .highlight {
   margin-bottom: 1.5em;
   font-size: 12px;
   font-size: 0.75rem;
@@ -425,251 +425,251 @@ div:not(.mygists) .highlight {
           border-radius: 3px;
 }
 
-div:not(.mygists) .highlight pre {
+:not(.mygists) .highlight pre {
   position: relative;
   padding: 1em;
   margin: 0;
 }
 
-div:not(.mygists) .highlight .lineno {
+:not(.mygists) .highlight .lineno {
   padding-right: 24px;
   color: #8f908a;
 }
 
-div:not(.mygists) .highlight .hll {
+:not(.mygists) .highlight .hll {
   background-color: #49483e;
 }
 
-div:not(.mygists) .highlight .c {
+:not(.mygists) .highlight .c {
   color: #75715e;
 }
 
-div:not(.mygists) .highlight .err {
+:not(.mygists) .highlight .err {
   color: #960050;
   background-color: #1e0010;
 }
 
-div:not(.mygists) .highlight .k {
+:not(.mygists) .highlight .k {
   color: #66d9ef;
 }
 
-div:not(.mygists) .highlight .l {
+:not(.mygists) .highlight .l {
   color: #ae81ff;
 }
 
-div:not(.mygists) .highlight .n {
+:not(.mygists) .highlight .n {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .o {
+:not(.mygists) .highlight .o {
   color: #f92672;
 }
 
-div:not(.mygists) .highlight .p {
+:not(.mygists) .highlight .p {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .cm {
+:not(.mygists) .highlight .cm {
   color: #75715e;
 }
 
-div:not(.mygists) .highlight .cp {
+:not(.mygists) .highlight .cp {
   color: #75715e;
 }
 
-div:not(.mygists) .highlight .c1 {
+:not(.mygists) .highlight .c1 {
   color: #75715e;
 }
 
-div:not(.mygists) .highlight .cs {
+:not(.mygists) .highlight .cs {
   color: #75715e;
 }
 
-div:not(.mygists) .highlight .ge {
+:not(.mygists) .highlight .ge {
   font-style: italic;
 }
 
-div:not(.mygists) .highlight .gs {
+:not(.mygists) .highlight .gs {
   font-weight: bold;
 }
 
-div:not(.mygists) .highlight .kc {
+:not(.mygists) .highlight .kc {
   color: #66d9ef;
 }
 
-div:not(.mygists) .highlight .kd {
+:not(.mygists) .highlight .kd {
   color: #66d9ef;
 }
 
-div:not(.mygists) .highlight .kn {
+:not(.mygists) .highlight .kn {
   color: #f92672;
 }
 
-div:not(.mygists) .highlight .kp {
+:not(.mygists) .highlight .kp {
   color: #66d9ef;
 }
 
-div:not(.mygists) .highlight .kr {
+:not(.mygists) .highlight .kr {
   color: #66d9ef;
 }
 
-div:not(.mygists) .highlight .kt {
+:not(.mygists) .highlight .kt {
   color: #66d9ef;
 }
 
-div:not(.mygists) .highlight .ld {
+:not(.mygists) .highlight .ld {
   color: #e6db74;
 }
 
-div:not(.mygists) .highlight .m {
+:not(.mygists) .highlight .m {
   color: #ae81ff;
 }
 
-div:not(.mygists) .highlight .s {
+:not(.mygists) .highlight .s {
   color: #e6db74;
 }
 
-div:not(.mygists) .highlight .na {
+:not(.mygists) .highlight .na {
   color: #a6e22e;
 }
 
-div:not(.mygists) .highlight .nb {
+:not(.mygists) .highlight .nb {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .nc {
+:not(.mygists) .highlight .nc {
   color: #a6e22e;
 }
 
-div:not(.mygists) .highlight .no {
+:not(.mygists) .highlight .no {
   color: #66d9ef;
 }
 
-div:not(.mygists) .highlight .nd {
+:not(.mygists) .highlight .nd {
   color: #a6e22e;
 }
 
-div:not(.mygists) .highlight .ni {
+:not(.mygists) .highlight .ni {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .ne {
+:not(.mygists) .highlight .ne {
   color: #a6e22e;
 }
 
-div:not(.mygists) .highlight .nf {
+:not(.mygists) .highlight .nf {
   color: #a6e22e;
 }
 
-div:not(.mygists) .highlight .nl {
+:not(.mygists) .highlight .nl {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .nn {
+:not(.mygists) .highlight .nn {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .nx {
+:not(.mygists) .highlight .nx {
   color: #a6e22e;
 }
 
-div:not(.mygists) .highlight .py {
+:not(.mygists) .highlight .py {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .nt {
+:not(.mygists) .highlight .nt {
   color: #f92672;
 }
 
-div:not(.mygists) .highlight .nv {
+:not(.mygists) .highlight .nv {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .ow {
+:not(.mygists) .highlight .ow {
   color: #f92672;
 }
 
-div:not(.mygists) .highlight .w {
+:not(.mygists) .highlight .w {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .mf {
+:not(.mygists) .highlight .mf {
   color: #ae81ff;
 }
 
-div:not(.mygists) .highlight .mh {
+:not(.mygists) .highlight .mh {
   color: #ae81ff;
 }
 
-div:not(.mygists) .highlight .mi {
+:not(.mygists) .highlight .mi {
   color: #ae81ff;
 }
 
-div:not(.mygists) .highlight .mo {
+:not(.mygists) .highlight .mo {
   color: #ae81ff;
 }
 
-div:not(.mygists) .highlight .sb {
+:not(.mygists) .highlight .sb {
   color: #e6db74;
 }
 
-div:not(.mygists) .highlight .sc {
+:not(.mygists) .highlight .sc {
   color: #e6db74;
 }
 
-div:not(.mygists) .highlight .sd {
+:not(.mygists) .highlight .sd {
   color: #e6db74;
 }
 
-div:not(.mygists) .highlight .s2 {
+:not(.mygists) .highlight .s2 {
   color: #e6db74;
 }
 
-div:not(.mygists) .highlight .se {
+:not(.mygists) .highlight .se {
   color: #ae81ff;
 }
 
-div:not(.mygists) .highlight .sh {
+:not(.mygists) .highlight .sh {
   color: #e6db74;
 }
 
-div:not(.mygists) .highlight .si {
+:not(.mygists) .highlight .si {
   color: #e6db74;
 }
 
-div:not(.mygists) .highlight .sx {
+:not(.mygists) .highlight .sx {
   color: #e6db74;
 }
 
-div:not(.mygists) .highlight .sr {
+:not(.mygists) .highlight .sr {
   color: #e6db74;
 }
 
-div:not(.mygists) .highlight .s1 {
+:not(.mygists) .highlight .s1 {
   color: #e6db74;
 }
 
-div:not(.mygists) .highlight .ss {
+:not(.mygists) .highlight .ss {
   color: #e6db74;
 }
 
-div:not(.mygists) .highlight .bp {
+:not(.mygists) .highlight .bp {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .vc {
+:not(.mygists) .highlight .vc {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .vg {
+:not(.mygists) .highlight .vg {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .vi {
+:not(.mygists) .highlight .vi {
   color: #f8f8f2;
 }
 
-div:not(.mygists) .highlight .il {
+:not(.mygists) .highlight .il {
   color: #ae81ff;
 }
 
