@@ -33,21 +33,7 @@ In case of success, results are stored inside state using `reducers`.
 
 This corresponds to these `@effects` code:
 
-{% highlight javascript %}
-@Effect() actionX$ = this.updates$
-    .ofType('ACTION_X')
-    .map(toPayload)
-    .switchMap(payload => this.api.callApiX(payload)
-        .map(data => ({type: 'ACTION_X_SUCCESS', payload: data}))
-        .catch(err => Observable.of({type: 'ACTION_X_FAIL', payload: err}))
-
-@Effect() actionY$ = this.updates$
-    .ofType('ACTION_Y')
-    .map(toPayload)
-    .switchMap(payload => this.api.callApiY(payload)
-        .map(data => ({type: 'ACTION_Y_SUCCESS', payload: data}))
-        .catch(err => Observable.of({type: 'ACTION_Y_FAIL', payload: err}))
-{% endhighlight %}
+<script src="https://gist.github.com/bertrandg/6207c52d8d58d4ca6f2ed924131a65c9.js"></script>
 <br>
 
 
@@ -58,51 +44,5 @@ And if it hasn't, call it first, then call `callApiY()` and finish with **ACTION
 
 Here is a simple workaround to solve it elegantly:
 
-{% highlight javascript %}
+<script src="https://gist.github.com/bertrandg/7efbc924d60164d05daaa7d0b4f89267.js"></script>
 
-// Nothing changed here, works as previously. 
-@Effect() actionX$ = this.updates$
-    .ofType('ACTION_X')
-    .map(toPayload)
-    .switchMap(payload => this.api.callApiX(payload)
-        .map(data => ({type: 'ACTION_X_SUCCESS', payload: data}))
-        .catch(err => Observable.of({type: 'ACTION_X_FAIL', payload: err}))
-
-
-// Here is the magic. 
-@Effect() actionY$ = this.updates$
-    .ofType('ACTION_Y')
-    .map(toPayload)
-    // Retrieve part of the current state telling us if callApiX has been called already. 
-    .withLatestFrom(this.store.select(state => state.someBoolean))
-    .switchMap(([payload, someBoolean]) => {
-        // Function calling callApiY() and acting accordingly.
-        const callHttpY = v => {
-            return this.api.callApiY(v)
-                .map(data => ({type: 'ACTION_Y_SUCCESS', payload: data}))
-                .catch(err => Observable.of({type: 'ACTION_Y_FAIL', payload: err}));
-        }
-        
-        // If data from store indicates that callApiX() has already been called with success 
-        // Then directly call callApiY(). 
-        if(someBoolean) {
-            return callHttpY(payload);
-        }
-
-        // Otherwise emit action triggering callApiX() 
-        // Then wait for first response action (success or fail) 
-        // And act accordingly. 
-        return Observable.of({type: 'ACTION_X', payload})
-            .merge(
-                this.updates$
-                    .ofType('ACTION_X_SUCCESS', 'ACTION_X_FAIL')
-                    .first()
-                    .switchMap(action => {
-                        if(action.type === 'ACTION_X_FAIL') {
-                            return Observable.of({type: 'ACTION_Y_FAIL', payload: 'Because ACTION_X failed.'});
-                        }
-                        return callHttpY(payload);
-                    })
-            );
-    });
-{% endhighlight %}
