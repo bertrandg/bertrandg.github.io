@@ -4285,6 +4285,9 @@ body {
   padding: 10px 0;
   border-bottom: 1px solid #bbbbbb;
 }
+.entry-content .mygists table td {
+  border-bottom: 0;
+}
 
 #post-index .header-title h2 {
   text-transform: none;
