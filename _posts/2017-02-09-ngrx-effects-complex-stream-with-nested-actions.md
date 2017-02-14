@@ -14,6 +14,7 @@ share: true
 Here is a case I faced using the great [ngrx/store](https://github.com/ngrx/store) & [effects](https://github.com/ngrx/effects) libraries to take care of my data.
 
 Working only with streams to manage all side effects is hard at first but once you got the declic and start to tame more and more `rxjs` operators, you are the king of the world!
+<br>
 
 
 ### ➜ Simple need to start:
@@ -47,6 +48,7 @@ This corresponds to these `@effects` code:
         .map(data => ({type: 'ACTION_Y_SUCCESS', payload: data}))
         .catch(err => Observable.of({type: 'ACTION_Y_FAIL', payload: err}))
 {% endhighlight %}
+<br>
 
 
 ### ➜ Let's complexify the need:
