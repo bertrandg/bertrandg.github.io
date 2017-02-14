@@ -4285,8 +4285,8 @@ body {
   padding: 10px 0;
   border-bottom: 1px solid #bbbbbb;
 }
-.gist table td {
-  border-bottom: 0;
+.gist tr td {
+  border-bottom: 0 !important;
 }
 
 #post-index .header-title h2 {
