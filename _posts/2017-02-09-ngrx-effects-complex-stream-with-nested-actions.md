@@ -69,11 +69,11 @@ Here is a simple workaround to solve it elegantly:
         .catch(err => Observable.of({type: 'ACTION_X_FAIL', payload: err}))
 
 
-// Here is the magic.
+// Here is the magic. 
 @Effect() actionY$ = this.updates$
     .ofType('ACTION_Y')
     .map(toPayload)
-    // Retrieve part of the current state.
+    // Retrieve part of the current state telling us if callApiX has been called already. 
     .withLatestFrom(this.store.select(state => state.someBoolean))
     .switchMap(([payload, someBoolean]) => {
         // Function calling callApiY() and acting accordingly.
@@ -83,15 +83,15 @@ Here is a simple workaround to solve it elegantly:
                 .catch(err => Observable.of({type: 'ACTION_Y_FAIL', payload: err}));
         }
         
-        // If data from store indicates that callApiX() has already been called with success
-        // Then directly call callApiY().
+        // If data from store indicates that callApiX() has already been called with success 
+        // Then directly call callApiY(). 
         if(someBoolean) {
             return callHttpY(payload);
         }
 
-        // Otherwise emit action triggering callApiX()
-        // Then wait for first response action (success or fail)
-        // And act accordingly.
+        // Otherwise emit action triggering callApiX() 
+        // Then wait for first response action (success or fail) 
+        // And act accordingly. 
         return Observable.of({type: 'ACTION_X', payload})
             .merge(
                 this.updates$
