@@ -33,7 +33,9 @@ In case of success, results are stored inside state using `reducers`.
 
 This corresponds to these `@effects` code:
 
+<div class="mygists">
 <script src="https://gist.github.com/bertrandg/6207c52d8d58d4ca6f2ed924131a65c9.js"></script>
+</div>
 <br>
 
 
@@ -44,5 +46,6 @@ And if it hasn't, call it first, then call `callApiY()` and finish with **ACTION
 
 Here is a simple workaround to solve it elegantly:
 
+<div class="mygists">
 <script src="https://gist.github.com/bertrandg/7efbc924d60164d05daaa7d0b4f89267.js"></script>
-
+</div>
