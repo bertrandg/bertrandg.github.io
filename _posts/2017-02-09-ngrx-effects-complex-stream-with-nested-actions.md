@@ -20,8 +20,8 @@ Working only with streams to manage all side effects is hard at first but once y
 
 Imagine you have these needs:
 
-- When ACTION_X --> callApiX() --> ACTION_X_SUCCESS or ACTION_X_FAIL
-- When ACTION_Y --> callApiY() --> ACTION_Y_SUCCESS or ACTION_Y_FAIL
+- When **ACTION_X** --> `callApiX()` --> **ACTION_X_SUCCESS** / **ACTION_X_FAIL**
+- When **ACTION_Y** --> `callApiY()` --> **ACTION_Y_SUCCESS** / **ACTION_Y_FAIL**
 
 Nothing special here:
 
@@ -49,8 +49,8 @@ This corresponds to these `@effects` code:
 
 ### ➜ Let's complexify the need:
 
-Now imagine that, before calling callApiY(), you need to be sure that callApiX() has been called successfully.
-And if it hasn't, call it first, then call callApiY() and finish with ACTION_Y_SUCCESS if both calls succeed (else ACTION_Y_FAIL).
+Now imagine that, before calling `callApiY()`, you need to be sure that `callApiX()` has been called successfully.
+And if it hasn't, call it first, then call `callApiY()` and finish with **ACTION_Y_SUCCESS** if both calls succeed (else **ACTION_Y_FAIL**).
 
 Here is a simple workaround to solve it elegantly:
 
